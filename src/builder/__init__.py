@@ -1,0 +1,1 @@
+"""ETF Builder Backend - FastAPI application for ETF optimization."""

@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: etf-builder-api
+    env: python
+    buildCommand: "uv sync"
+    startCommand: "uv run uvicorn src.builder.main:app --host 0.0.0.0 --port 10000 --workers 2"
+    envVars:
+      - key: PYTHONPATH
+        value: "/opt/render/project/src"
+    plan: free
