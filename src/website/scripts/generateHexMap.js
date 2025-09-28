@@ -1,17 +1,17 @@
 import * as d3 from 'd3'
 import * as topojson from 'topojson-client'
-import { geoNaturalEarth1, geoPath, geoContains } from 'd3-geo'
+import { geoNaturalEarth1, geoPath, geoContains, geoMercator } from 'd3-geo'
 import { writeFileSync } from 'fs'
 import fetch from 'node-fetch'
 
 // Configuration
-const HEX_RADIUS = 3
-const WIDTH = 1200
+const HEX_RADIUS = 2
+const WIDTH = 600
 const HEIGHT = 600
 
 // Only filter out the most extreme polar regions
-const MIN_LATITUDE = -80  // Less aggressive - only remove far Antarctica
-const MAX_LATITUDE = 80   // Less aggressive - allow more northern regions
+const MIN_LATITUDE = -90  // Less aggressive - only remove far Antarctica
+const MAX_LATITUDE = 90   // Less aggressive - allow more northern regions
 
 // Countries to exclude (only Antarctica)
 const EXCLUDED_COUNTRIES = ['Antarctica']
@@ -31,7 +31,7 @@ async function generateFixedHexWorldMapSVG() {
 
   console.log(`Loaded ${countries.length} countries (excluded only Antarctica)`)
 
-  const projection = geoNaturalEarth1()
+  const projection = geoMercator()
   projection.fitSize([WIDTH, HEIGHT], land)
   const geoPathFunc = geoPath(projection)
 
@@ -52,26 +52,6 @@ async function generateFixedHexWorldMapSVG() {
   
   hexData.forEach((hex) => {
     const countryName = hex.country?.properties?.name || 'Unknown'
-    const lonlat = hex.lonlat
-    
-    if (lonlat) {
-      const [lon, lat] = lonlat
-      
-      // Remove longitude duplicates for problematic countries
-      if (countryName && (countryName.includes('Alaska') || countryName.includes('Russia') || countryName.includes('New Zealand'))) {
-        const regionKey = `${countryName}-${Math.floor(lat * 2)}`
-        
-        if (seenRegions.has(regionKey)) {
-          const prevLon = seenRegions.get(regionKey)
-          if (Math.abs(lon - prevLon) > 180) {
-            if (Math.abs(lon) > Math.abs(prevLon)) {
-              return
-            }
-          }
-        }
-        seenRegions.set(regionKey, lon)
-      }
-    }
     
     const pathD = hexPath(hex.x, hex.y, hex.r)
     svgContent += `  <path d="${pathD}" class="hex" data-country="${countryName}" stroke="rgba(255,255,255,0.06)" stroke-width="0.4" fill="#1f2937" />
