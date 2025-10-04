@@ -30,7 +30,7 @@ const availableIndustries = ref<string[]>([])
 
 // Arrow opacity - fades when scrolling
 const arrowOpacity = computed(() => {
-  return Math.max(0, 1 - scrollY.value / 200)
+  return Math.max(0, 1 - scrollY.value / 100)
 })
 
 // Check if map should be sticky
