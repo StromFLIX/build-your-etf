@@ -47,35 +47,43 @@ const unallocatedIndustries = computed(() => {
   return Math.max(0, 100 - allocated)
 })
 
+// Selected countries and industries (displayed in the UI)
+const selectedCountries = ref<string[]>([])
+const selectedIndustries = ref<string[]>([])
+
+// Max items that can be displayed
+const MAX_DISPLAYED_ITEMS = 5
+
 // Top countries and industries
 const topCountries = computed(() => {
-  return Object.entries(currentCountryData.value)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 5)
-    .map(([name, current]) => ({ 
-      name, 
-      current,
-      allocated: allocations.countries[name] || current
-    }))
+  return selectedCountries.value.map(name => ({
+    name,
+    current: currentCountryData.value[name] || 0,
+    allocated: allocations.countries[name] || currentCountryData.value[name] || 0
+  }))
 })
 
 const topIndustries = computed(() => {
-  return Object.entries(currentIndustryData.value)
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 5)
-    .map(([name, current]) => ({ 
-      name, 
-      current,
-      allocated: allocations.industries[name] || current
-    }))
+  return selectedIndustries.value.map(name => ({
+    name,
+    current: currentIndustryData.value[name] || 0,
+    allocated: allocations.industries[name] || currentIndustryData.value[name] || 0
+  }))
 })
+
+// Check if more items can be added
+const canAddMoreCountries = computed(() => selectedCountries.value.length < MAX_DISPLAYED_ITEMS)
+const canAddMoreIndustries = computed(() => selectedIndustries.value.length < MAX_DISPLAYED_ITEMS)
 
 // Filtered countries for search
 const filteredCountries = computed(() => {
   if (!countrySearch.value) return []
   const search = countrySearch.value.toLowerCase()
   return availableCountries.value
-    .filter(c => c.toLowerCase().includes(search))
+    .filter(c => 
+      c.toLowerCase().includes(search) && 
+      !selectedCountries.value.includes(c)
+    )
     .slice(0, 10)
 })
 
@@ -83,7 +91,10 @@ const filteredIndustries = computed(() => {
   if (!industrySearch.value) return []
   const search = industrySearch.value.toLowerCase()
   return availableIndustries.value
-    .filter(i => i.toLowerCase().includes(search))
+    .filter(i => 
+      i.toLowerCase().includes(search) && 
+      !selectedIndustries.value.includes(i)
+    )
     .slice(0, 10)
 })
 
@@ -113,12 +124,26 @@ onMounted(async () => {
     console.error('Failed to load available options:', error)
   }
   
-  // Initialize allocations with current data
-  Object.entries(currentCountryData.value).forEach(([name, value]) => {
-    allocations.countries[name] = value
+  // Initialize selected countries and industries with top 3
+  const sortedCountries = Object.entries(currentCountryData.value)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([name]) => name)
+  
+  const sortedIndustries = Object.entries(currentIndustryData.value)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([name]) => name)
+  
+  selectedCountries.value = sortedCountries
+  selectedIndustries.value = sortedIndustries
+  
+  // Initialize allocations with selected items only
+  sortedCountries.forEach(name => {
+    allocations.countries[name] = currentCountryData.value[name]
   })
-  Object.entries(currentIndustryData.value).forEach(([name, value]) => {
-    allocations.industries[name] = value
+  sortedIndustries.forEach(name => {
+    allocations.industries[name] = currentIndustryData.value[name]
   })
 })
 
@@ -132,7 +157,19 @@ async function optimizeAndUpdate() {
   
   loading.value = true
   try {
-    const result = await optimizePortfolio(allocations.countries, allocations.industries)
+    // Only send allocations for selected/displayed items
+    const selectedCountryAllocations: Record<string, number> = {}
+    const selectedIndustryAllocations: Record<string, number> = {}
+    
+    selectedCountries.value.forEach(country => {
+      selectedCountryAllocations[country] = allocations.countries[country] || 0
+    })
+    
+    selectedIndustries.value.forEach(industry => {
+      selectedIndustryAllocations[industry] = allocations.industries[industry] || 0
+    })
+    
+    const result = await optimizePortfolio(selectedCountryAllocations, selectedIndustryAllocations)
     portfolioResult.value = result
     
     // Update current data with achieved allocations
@@ -154,15 +191,37 @@ function updateIndustryAllocation(industry: string, value: number) {
 }
 
 function addCountryFromSearch(country: string) {
+  if (!canAddMoreCountries.value) return
+  
   const currentValue = currentCountryData.value[country] || 5
+  selectedCountries.value.push(country)
   allocations.countries[country] = currentValue
   countrySearch.value = ''
 }
 
 function addIndustryFromSearch(industry: string) {
+  if (!canAddMoreIndustries.value) return
+  
   const currentValue = currentIndustryData.value[industry] || 5
+  selectedIndustries.value.push(industry)
   allocations.industries[industry] = currentValue
   industrySearch.value = ''
+}
+
+function removeCountry(country: string) {
+  const index = selectedCountries.value.indexOf(country)
+  if (index > -1) {
+    selectedCountries.value.splice(index, 1)
+    delete allocations.countries[country]
+  }
+}
+
+function removeIndustry(industry: string) {
+  const index = selectedIndustries.value.indexOf(industry)
+  if (index > -1) {
+    selectedIndustries.value.splice(index, 1)
+    delete allocations.industries[industry]
+  }
 }
 
 function resetToMSCI() {
@@ -172,12 +231,25 @@ function resetToMSCI() {
   currentCountryData.value = defaultData.countries
   currentIndustryData.value = defaultData.industries
   
-  // Re-initialize with default
-  Object.entries(defaultData.countries).forEach(([name, value]) => {
-    allocations.countries[name] = value
+  // Re-initialize with top 3
+  const sortedCountries = Object.entries(defaultData.countries)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([name]) => name)
+  
+  const sortedIndustries = Object.entries(defaultData.industries)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([name]) => name)
+  
+  selectedCountries.value = sortedCountries
+  selectedIndustries.value = sortedIndustries
+  
+  sortedCountries.forEach(name => {
+    allocations.countries[name] = (defaultData.countries as Record<string, number>)[name]
   })
-  Object.entries(defaultData.industries).forEach(([name, value]) => {
-    allocations.industries[name] = value
+  sortedIndustries.forEach(name => {
+    allocations.industries[name] = (defaultData.industries as Record<string, number>)[name]
   })
   
   portfolioResult.value = null
@@ -274,33 +346,48 @@ function resetToMSCI() {
                 v-model="countrySearch"
                 type="text"
                 placeholder="Search countries..."
-                class="w-full bg-gray-900 border border-gray-700 rounded px-4 py-2 text-sm focus:outline-none focus:border-white"
+                :disabled="!canAddMoreCountries"
+                class="w-full bg-gray-900 border border-gray-700 rounded px-4 py-2 text-sm focus:outline-none focus:border-white disabled:opacity-50 disabled:cursor-not-allowed"
               />
               <div 
-                v-if="filteredCountries.length > 0"
+                v-if="filteredCountries.length > 0 && canAddMoreCountries"
                 class="absolute top-full left-0 right-0 mt-1 bg-gray-900 border border-gray-700 rounded max-h-48 overflow-y-auto z-10"
               >
                 <button
                   v-for="country in filteredCountries"
                   :key="country"
                   @click="addCountryFromSearch(country)"
-                  class="w-full text-left px-4 py-2 hover:bg-gray-800 text-sm"
+                  class="w-full text-left px-4 py-2 hover:bg-gray-800 text-sm flex items-center justify-between group"
                 >
-                  {{ country }}
+                  <span>{{ country }}</span>
+                  <span class="text-xs text-gray-500 group-hover:text-white">+ Add</span>
                 </button>
               </div>
             </div>
+            
+            <div v-if="!canAddMoreCountries" class="text-xs text-gray-500">
+              Maximum of {{ MAX_DISPLAYED_ITEMS }} countries. Remove one to add more.
+            </div>
 
-            <!-- Top 5 Countries with Sliders -->
+            <!-- Countries with Sliders -->
             <div class="space-y-4">
               <div 
                 v-for="item in topCountries" 
                 :key="item.name"
                 class="space-y-2"
               >
-                <div class="flex justify-between text-sm">
+                <div class="flex justify-between text-sm items-center">
                   <span class="font-medium">{{ item.name }}</span>
-                  <span class="text-gray-400">{{ item.allocated.toFixed(1) }}%</span>
+                  <div class="flex items-center gap-2">
+                    <span class="text-gray-400">{{ item.allocated.toFixed(1) }}%</span>
+                    <button
+                      @click="removeCountry(item.name)"
+                      class="text-red-500 hover:text-red-400 text-xs"
+                      title="Remove country"
+                    >
+                      ✕
+                    </button>
+                  </div>
                 </div>
                 
                 <!-- Slider with current value indicator -->
@@ -340,33 +427,48 @@ function resetToMSCI() {
                 v-model="industrySearch"
                 type="text"
                 placeholder="Search industries..."
-                class="w-full bg-gray-900 border border-gray-700 rounded px-4 py-2 text-sm focus:outline-none focus:border-white"
+                :disabled="!canAddMoreIndustries"
+                class="w-full bg-gray-900 border border-gray-700 rounded px-4 py-2 text-sm focus:outline-none focus:border-white disabled:opacity-50 disabled:cursor-not-allowed"
               />
               <div 
-                v-if="filteredIndustries.length > 0"
+                v-if="filteredIndustries.length > 0 && canAddMoreIndustries"
                 class="absolute top-full left-0 right-0 mt-1 bg-gray-900 border border-gray-700 rounded max-h-48 overflow-y-auto z-10"
               >
                 <button
                   v-for="industry in filteredIndustries"
                   :key="industry"
                   @click="addIndustryFromSearch(industry)"
-                  class="w-full text-left px-4 py-2 hover:bg-gray-800 text-sm"
+                  class="w-full text-left px-4 py-2 hover:bg-gray-800 text-sm flex items-center justify-between group"
                 >
-                  {{ industry }}
+                  <span>{{ industry }}</span>
+                  <span class="text-xs text-gray-500 group-hover:text-white">+ Add</span>
                 </button>
               </div>
             </div>
+            
+            <div v-if="!canAddMoreIndustries" class="text-xs text-gray-500">
+              Maximum of {{ MAX_DISPLAYED_ITEMS }} industries. Remove one to add more.
+            </div>
 
-            <!-- Top 5 Industries with Sliders -->
+            <!-- Industries with Sliders -->
             <div class="space-y-4">
               <div 
                 v-for="item in topIndustries" 
                 :key="item.name"
                 class="space-y-2"
               >
-                <div class="flex justify-between text-sm">
+                <div class="flex justify-between text-sm items-center">
                   <span class="font-medium">{{ item.name }}</span>
-                  <span class="text-gray-400">{{ item.allocated.toFixed(1) }}%</span>
+                  <div class="flex items-center gap-2">
+                    <span class="text-gray-400">{{ item.allocated.toFixed(1) }}%</span>
+                    <button
+                      @click="removeIndustry(item.name)"
+                      class="text-red-500 hover:text-red-400 text-xs"
+                      title="Remove industry"
+                    >
+                      ✕
+                    </button>
+                  </div>
                 </div>
                 
                 <!-- Slider with current value indicator -->
