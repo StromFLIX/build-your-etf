@@ -22,17 +22,16 @@ const topIndustries = computed(() => {
   return processedData.value.slice(0, 8)
 })
 
-// Calculate "Rest" percentage
+// Calculate "Rest" percentage to fill to 100%
 const restPercentage = computed(() => {
   const topTotal = topIndustries.value.reduce((sum, item) => sum + item.weight, 0)
-  const total = processedData.value.reduce((sum, item) => sum + item.weight, 0)
-  return Math.max(0, total - topTotal)
+  return Math.max(0, 100 - topTotal)
 })
 
 // Data for bar chart (top 8 + rest)
 const barChartData = computed(() => {
   const data = [...topIndustries.value]
-  if (restPercentage.value > 0) {
+  if (restPercentage.value > 0.01) { // Only show if > 0.01%
     data.push({ industry: 'Rest', weight: restPercentage.value })
   }
   return data
@@ -41,7 +40,7 @@ const barChartData = computed(() => {
 // Data for legend (top 8 + rest if exists)
 const legendData = computed(() => {
   const data = [...topIndustries.value]
-  if (restPercentage.value > 0) {
+  if (restPercentage.value > 0.01) { // Only show if > 0.01%
     data.push({ industry: 'Rest', weight: restPercentage.value })
   }
   return data
