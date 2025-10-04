@@ -407,7 +407,7 @@ function resetToMSCI() {
           <h2 class="text-2xl font-light">Customize Your Portfolio</h2>
           <button 
             @click="resetToMSCI"
-            class="text-xs border border-gray-600 px-4 py-2 hover:bg-white hover:text-black transition-colors"
+            class="text-xs border border-gray-600 px-4 py-2 hover:bg-white hover:text-black transition-colors rounded-lg"
           >
             Reset
           </button>
@@ -584,7 +584,7 @@ function resetToMSCI() {
           <button
             @click="optimizeAndUpdate"
             :disabled="loading"
-            class="w-full bg-white text-black py-4 text-lg font-medium hover:bg-gray-200 transition-colors disabled:bg-gray-700 disabled:text-gray-400"
+            class="w-full bg-white text-black py-4 text-lg font-medium hover:bg-gray-200 transition-colors disabled:bg-gray-700 disabled:text-gray-400 rounded-lg"
           >
             {{ loading ? 'Optimizing...' : 'Optimize Portfolio' }}
           </button>
