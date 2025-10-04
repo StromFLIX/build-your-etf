@@ -36,6 +36,16 @@ const mapIsSticky = computed(() => {
   return scrollY.value > windowHeight.value * 0.33
 })
 
+// Header sticky state - becomes small and moves to top left
+const headerIsSticky = computed(() => {
+  return scrollY.value > 100
+})
+
+// Divider opacity - fades in when scrolling
+const dividerOpacity = computed(() => {
+  return Math.min(1, scrollY.value / 200)
+})
+
 // Computed values
 const unallocatedCountries = computed(() => {
   const allocated = Object.values(allocations.countries).reduce((sum, val) => sum + val, 0)
@@ -260,6 +270,30 @@ function resetToMSCI() {
 <template>
   <div class="min-h-screen bg-black text-white">
     
+    <!-- Sticky Header - Logo and Title -->
+    <div 
+      class="fixed top-0 left-0 right-0 bg-black transition-all duration-300 z-50"
+      :class="headerIsSticky ? 'translate-y-0' : '-translate-y-full'"
+    >
+      <div class="px-6 py-4 flex items-center gap-3">
+        <!-- Logo -->
+        <img 
+          src="/logo-cropped.png" 
+          alt="Build your ETF Logo" 
+          class="w-8 h-8 object-contain"
+        />
+        <!-- Text -->
+        <h1 class="text-xl font-light">
+          Build <span class="border-b-2 border-white">Your</span> ETF
+        </h1>
+      </div>
+      <!-- Divider -->
+      <div 
+        class="h-px bg-gray-800 transition-opacity duration-300"
+        :style="{ opacity: dividerOpacity }"
+      ></div>
+    </div>
+    
     <!-- Hero Section - Simple 3-part layout -->
     <div class="h-screen flex flex-col relative">
       
@@ -281,8 +315,8 @@ function resetToMSCI() {
         </div>
       </div>
 
-      <!-- Middle 1/3 - Country Allocation Map (Becomes sticky on scroll) -->
-      <div class="flex-1 px-6 flex items-center justify-center sticky top-0" style="z-index: 10;">
+      <!-- Middle 1/3 - Country Allocation Map (Sticky in center) -->
+      <div class="flex-1 px-6 flex items-center justify-center sticky top-1/3">
         <div class="w-full max-w-6xl h-full flex items-center">
           <HexWorldMap :countryData="currentCountryData" class="w-full h-full" />
         </div>
