@@ -27,6 +27,8 @@ const loading = ref(false)
 const scrollY = ref(0)
 const countrySearch = ref('')
 const industrySearch = ref('')
+const countrySearchFocused = ref(false)
+const industrySearchFocused = ref(false)
 const windowHeight = ref(0)
 const heroSectionRef = ref<HTMLElement>()
 const mapSectionRef = ref<HTMLElement>()
@@ -134,25 +136,45 @@ function getCountryOpacity(weight: number): number {
 
 // Filtered countries for search
 const filteredCountries = computed(() => {
-  if (!countrySearch.value) return []
   const search = countrySearch.value.toLowerCase()
-  return availableCountries.value
+  const filtered = availableCountries.value
     .filter(c => 
       c.toLowerCase().includes(search) && 
       !selectedCountries.value.includes(c)
     )
-    .slice(0, 10)
+  
+  // Show all available options when focused, even without search text
+  if (countrySearchFocused.value && !countrySearch.value) {
+    return filtered
+  }
+  
+  // Show filtered results when typing
+  if (countrySearch.value) {
+    return filtered
+  }
+  
+  return []
 })
 
 const filteredIndustries = computed(() => {
-  if (!industrySearch.value) return []
   const search = industrySearch.value.toLowerCase()
-  return availableIndustries.value
+  const filtered = availableIndustries.value
     .filter(i => 
       i.toLowerCase().includes(search) && 
       !selectedIndustries.value.includes(i)
     )
-    .slice(0, 10)
+  
+  // Show all available options when focused, even without search text
+  if (industrySearchFocused.value && !industrySearch.value) {
+    return filtered
+  }
+  
+  // Show filtered results when typing
+  if (industrySearch.value) {
+    return filtered
+  }
+  
+  return []
 })
 
 // Scroll handler
@@ -263,6 +285,18 @@ function updateCountryAllocation(country: string, value: number) {
 
 function updateIndustryAllocation(industry: string, value: number) {
   allocations.industries[industry] = value
+}
+
+function handleCountrySearchBlur() {
+  window.setTimeout(() => {
+    countrySearchFocused.value = false
+  }, 200)
+}
+
+function handleIndustrySearchBlur() {
+  window.setTimeout(() => {
+    industrySearchFocused.value = false
+  }, 200)
 }
 
 function addCountryFromSearch(country: string) {
@@ -560,6 +594,8 @@ function toggleCategory(category: string) {
             <div class="relative">
               <input
                 v-model="countrySearch"
+                @focus="countrySearchFocused = true"
+                @blur="handleCountrySearchBlur"
                 type="text"
                 placeholder="Search countries..."
                 :disabled="!canAddMoreCountries"
@@ -641,6 +677,8 @@ function toggleCategory(category: string) {
             <div class="relative">
               <input
                 v-model="industrySearch"
+                @focus="industrySearchFocused = true"
+                @blur="handleIndustrySearchBlur"
                 type="text"
                 placeholder="Search industries..."
                 :disabled="!canAddMoreIndustries"
