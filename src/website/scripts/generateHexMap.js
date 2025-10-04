@@ -6,12 +6,12 @@ import fetch from 'node-fetch'
 
 // Configuration
 const HEX_RADIUS = 2
-const WIDTH = 600
+const WIDTH = 800
 const HEIGHT = 600
 
 // Only filter out the most extreme polar regions
-const MIN_LATITUDE = -90  // Less aggressive - only remove far Antarctica
-const MAX_LATITUDE = 90   // Less aggressive - allow more northern regions
+const MIN_LATITUDE = -60  // Remove Antarctica and extreme south
+const MAX_LATITUDE = 90   // Remove extreme north
 
 // Countries to exclude (only Antarctica)
 const EXCLUDED_COUNTRIES = ['Antarctica']
@@ -31,8 +31,22 @@ async function generateFixedHexWorldMapSVG() {
 
   console.log(`Loaded ${countries.length} countries (excluded only Antarctica)`)
 
+  // Create a filtered land feature with only our latitude bounds
+  const filteredLandFeature = {
+    type: "FeatureCollection",
+    features: countries.filter(c => {
+      const coords = c.geometry.coordinates
+      // Check if country has any coordinates within our bounds
+      return true // We'll filter by latitude in the hex grid generation
+    })
+  }
+
+  // Use Mercator with custom bounds that exclude polar regions
   const projection = geoMercator()
-  projection.fitSize([WIDTH, HEIGHT], land)
+    .center([7, 15])  // Center slightly north of equator
+    .scale(130)       // Manual scale for good fit
+    .translate([WIDTH / 2, HEIGHT / 2])
+  
   const geoPathFunc = geoPath(projection)
 
   console.log('Generating hex grid...')
