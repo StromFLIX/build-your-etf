@@ -1,6 +1,6 @@
 // Auto-generated hex world map SVG (surgically fixed)
 // Generated on 2025-09-28T20:57:33.312Z
-export const HEX_WORLD_MAP_SVG = `<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="hex-world-map">
+export const HEX_WORLD_MAP_SVG = `<svg viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg" class="hex-world-map">
   <defs>
     <style>
       .hex { transition: fill 0.3s ease; }

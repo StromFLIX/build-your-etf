@@ -270,14 +270,14 @@ function resetToMSCI() {
             Build <span class="border-b-4 border-white">Your</span> ETF
           </h1>
           <p class="text-lg md:text-xl text-gray-300">
-            Choose your allocation.
+            Because the world is biased.
           </p>
         </div>
       </div>
 
       <!-- Middle 1/3 - Country Allocation Map (Becomes sticky on scroll) -->
       <div class="flex-1 px-6 flex items-center justify-center sticky top-0" style="z-index: 10;">
-        <div class="w-full max-w-4xl h-full flex items-center">
+        <div class="w-full max-w-6xl h-full flex items-center">
           <HexWorldMap :countryData="currentCountryData" class="w-full h-full" />
         </div>
       </div>
@@ -303,10 +303,9 @@ function resetToMSCI() {
       <div class="max-w-6xl mx-auto space-y-12">
         
 
-        <!-- Industry Pie Chart -->
+        <!-- Industry Bar Chart -->
         <div class="space-y-4">
-          <h3 class="text-xl font-medium">Industry Allocation</h3>
-          <div class="rounded-lg border border-gray-800 overflow-hidden bg-black" style="height: 500px;">
+          <div class="bg-black" style="height: 120px;">
             <IndustryPieChart :industryData="currentIndustryData" />
           </div>
         </div>
