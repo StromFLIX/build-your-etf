@@ -17,6 +17,8 @@ const scrollY = ref(0)
 const countrySearch = ref('')
 const industrySearch = ref('')
 const windowHeight = ref(0)
+const scrollLocked = ref(false)
+const lockScrollPosition = ref(0)
 
 // Default MSCI World for initial display
 const defaultData = getDefaultMSCIWorldData()
@@ -110,7 +112,25 @@ const filteredIndustries = computed(() => {
 
 // Scroll handler
 function handleScroll() {
-  scrollY.value = window.scrollY
+  const currentScroll = window.scrollY
+  
+  // Lock position is roughly when map reaches the top (after ~66% of viewport height)
+  const lockPosition = windowHeight.value * 0.64
+  
+  // Once we pass the lock position, prevent scrolling back up
+  if (currentScroll >= lockPosition && !scrollLocked.value) {
+    scrollLocked.value = true
+    lockScrollPosition.value = lockPosition
+  }
+  
+  // Prevent scrolling back above the lock position
+  if (scrollLocked.value && currentScroll < lockScrollPosition.value) {
+    window.scrollTo(0, lockScrollPosition.value)
+    scrollY.value = lockScrollPosition.value
+    return
+  }
+  
+  scrollY.value = currentScroll
 }
 
 function handleResize() {
@@ -263,6 +283,11 @@ function resetToMSCI() {
   })
   
   portfolioResult.value = null
+  
+  // Unlock scroll when resetting
+  scrollLocked.value = false
+  lockScrollPosition.value = 0
+  
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 </script>
