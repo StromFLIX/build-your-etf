@@ -37,13 +37,13 @@ function updateColors() {
 </script>
 
 <template>
-  <div class="relative w-full h-full overflow-hidden">
+  <div class="relative w-full h-full flex items-center justify-center">
     <!-- SVG Container with rounded borders and fade effect -->
-    <div class="relative w-full h-full rounded-2xl overflow-hidden bg-black">
+    <div class="relative w-full h-full max-w-full max-h-full rounded-2xl overflow-hidden bg-black flex items-center justify-center">
       <svg 
         ref="svgRef" 
         viewBox="0 0 800 600"
-        class="w-full h-full"
+        class="w-full h-full max-w-full max-h-full"
         preserveAspectRatio="xMidYMid meet"
       >
         <!-- Precomputed hex world map SVG will be loaded here -->

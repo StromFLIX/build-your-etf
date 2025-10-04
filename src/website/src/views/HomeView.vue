@@ -345,9 +345,11 @@ function resetToMSCI() {
       </div>
 
       <!-- Middle 1/3 - Country Allocation Map (Sticky in center) -->
-      <div ref="mapSectionRef" class="flex-1 px-6 flex flex-col items-center justify-center sticky top-1/3 gap-3">
-        <div class="w-full max-w-6xl flex-1 flex items-center">
-          <HexWorldMap :countryData="currentCountryData" class="w-full h-full" />
+      <div ref="mapSectionRef" class="flex-1 px-6 flex flex-col items-center justify-center sticky top-1/3 md:top-1/4 gap-3">
+        <div class="w-full max-w-6xl flex-1 flex items-center justify-center">
+          <div class="w-full h-full max-h-[500px] flex items-center justify-center">
+            <HexWorldMap :countryData="currentCountryData" class="w-full h-full" />
+          </div>
         </div>
         
         <!-- Legend below map -->
