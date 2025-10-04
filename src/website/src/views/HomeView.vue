@@ -17,8 +17,8 @@ const scrollY = ref(0)
 const countrySearch = ref('')
 const industrySearch = ref('')
 const windowHeight = ref(0)
-const scrollLocked = ref(false)
-const lockScrollPosition = ref(0)
+const heroSectionRef = ref<HTMLElement>()
+const mapSectionRef = ref<HTMLElement>()
 
 // Default MSCI World for initial display
 const defaultData = getDefaultMSCIWorldData()
@@ -48,11 +48,10 @@ const dividerOpacity = computed(() => {
   return Math.min(1, scrollY.value / 200)
 })
 
-// Labels opacity - fades in gradually until lock position
+// Labels opacity - fades in gradually as you scroll
 const labelsOpacity = computed(() => {
-  const lockPosition = windowHeight.value * 0.60
-  if (lockPosition === 0) return 0
-  return Math.min(1, scrollY.value / lockPosition)
+  // Fade in over the first 500px of scrolling
+  return Math.min(1, scrollY.value / 500)
 })
 
 // Computed values
@@ -135,25 +134,7 @@ const filteredIndustries = computed(() => {
 
 // Scroll handler
 function handleScroll() {
-  const currentScroll = window.scrollY
-  
-  // Lock position is roughly when map reaches the top (after ~66% of viewport height)
-  const lockPosition = windowHeight.value * 0.60
-  
-  // Once we pass the lock position, prevent scrolling back up
-  if (currentScroll >= lockPosition && !scrollLocked.value) {
-    scrollLocked.value = true
-    lockScrollPosition.value = lockPosition
-  }
-  
-  // Prevent scrolling back above the lock position
-  if (scrollLocked.value && currentScroll < lockScrollPosition.value) {
-    window.scrollTo(0, lockScrollPosition.value)
-    scrollY.value = lockScrollPosition.value
-    return
-  }
-  
-  scrollY.value = currentScroll
+  scrollY.value = window.scrollY
 }
 
 function handleResize() {
@@ -168,8 +149,6 @@ onMounted(async () => {
   // Ensure page starts at the top on load/reload
   window.scrollTo(0, 0)
   scrollY.value = 0
-  scrollLocked.value = false
-  lockScrollPosition.value = 0
   
   // Load available options
   try {
@@ -313,10 +292,6 @@ function resetToMSCI() {
   
   portfolioResult.value = null
   
-  // Unlock scroll when resetting
-  scrollLocked.value = false
-  lockScrollPosition.value = 0
-  
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 </script>
@@ -349,7 +324,7 @@ function resetToMSCI() {
     </div>
     
     <!-- Hero Section - Simple 3-part layout -->
-    <div class="h-screen flex flex-col relative">
+    <div ref="heroSectionRef" class="h-screen flex flex-col relative">
       
       <!-- Top 1/3 - Centered Text -->
       <div class="flex-1 flex items-center justify-center px-6">
@@ -370,7 +345,7 @@ function resetToMSCI() {
       </div>
 
       <!-- Middle 1/3 - Country Allocation Map (Sticky in center) -->
-      <div class="flex-1 px-6 flex flex-col items-center justify-center sticky top-1/3 gap-3">
+      <div ref="mapSectionRef" class="flex-1 px-6 flex flex-col items-center justify-center sticky top-1/3 gap-3">
         <div class="w-full max-w-6xl flex-1 flex items-center">
           <HexWorldMap :countryData="currentCountryData" class="w-full h-full" />
         </div>
