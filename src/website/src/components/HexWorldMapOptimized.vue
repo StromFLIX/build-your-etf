@@ -13,7 +13,7 @@ const svgRef = ref<SVGElement>()
 onMounted(() => {
   if (svgRef.value) {
     // Load the precomputed SVG
-    svgRef.value.innerHTML = HEX_WORLD_MAP_SVG.replace('<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" class="hex-world-map">', '').replace('</svg>', '')
+    svgRef.value.innerHTML = HEX_WORLD_MAP_SVG.replace('<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" class="hex-world-map">', '').replace('</svg>', '')
     updateColors()
   }
 })
@@ -42,7 +42,7 @@ function updateColors() {
     <div class="relative w-full h-full max-w-full max-h-full rounded-2xl overflow-hidden bg-black flex items-center justify-center">
       <svg 
         ref="svgRef" 
-        viewBox="0 0 800 600"
+        viewBox="0 0 800 450"
         class="w-full h-full max-w-full max-h-full"
         preserveAspectRatio="xMidYMid meet"
       >

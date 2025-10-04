@@ -7,7 +7,7 @@ import fetch from 'node-fetch'
 // Configuration
 const HEX_RADIUS = 2
 const WIDTH = 800
-const HEIGHT = 600
+const HEIGHT = 550  // Reduced height to remove empty space at bottom
 
 // Only filter out the most extreme polar regions
 const MIN_LATITUDE = -60  // Remove Antarctica and extreme south
@@ -43,7 +43,7 @@ async function generateFixedHexWorldMapSVG() {
 
   // Use Mercator with custom bounds that exclude polar regions
   const projection = geoMercator()
-    .center([7, 15])  // Center slightly north of equator
+    .center([7, 48])  // Center more north to use space better
     .scale(130)       // Manual scale for good fit
     .translate([WIDTH / 2, HEIGHT / 2])
   
