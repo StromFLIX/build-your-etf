@@ -142,6 +142,12 @@ onMounted(async () => {
   window.addEventListener('resize', handleResize)
   windowHeight.value = window.innerHeight
   
+  // Ensure page starts at the top on load/reload
+  window.scrollTo(0, 0)
+  scrollY.value = 0
+  scrollLocked.value = false
+  lockScrollPosition.value = 0
+  
   // Load available options
   try {
     const [countries, industries] = await Promise.all([
@@ -378,7 +384,7 @@ function resetToMSCI() {
     </div>
 
     <!-- Controls Section -->
-    <div class="relative bg-black border-t border-gray-800 min-h-screen px-4 py-8">
+    <div class="relative bg-black border-t border-gray-800  px-4 pt-8">
       <div class="max-w-6xl mx-auto">
         
         <!-- Header -->
