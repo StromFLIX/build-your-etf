@@ -243,6 +243,10 @@ async function optimizeAndUpdate() {
   if (loading.value) return
   
   loading.value = true
+  
+  // Scroll to map section
+  mapSectionRef.value?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  
   try {
     // Only send allocations for selected/displayed items
     const selectedCountryAllocations: Record<string, number> = {}
@@ -513,7 +517,8 @@ function toggleCategory(category: string) {
               <label class="text-gray-500">Show top</label>
               <select
                 v-model.number="maxETFs"
-                class="bg-gray-900 border border-gray-700 rounded px-2 py-1 text-white focus:outline-none focus:border-white cursor-pointer hover:border-gray-500 transition-colors"
+                :disabled="loading"
+                class="bg-gray-900 border border-gray-700 rounded px-2 py-1 text-white focus:outline-none focus:border-white cursor-pointer hover:border-gray-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <option :value="1">1</option>
                 <option :value="2">2</option>
@@ -534,16 +539,19 @@ function toggleCategory(category: string) {
             >
               <button
                 @click="toggleCategory(category)"
+                :disabled="loading"
                 :class="[
                   'px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 flex items-center gap-2',
                   selectedCategories.has(category)
                     ? 'bg-white text-black'
-                    : 'bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white'
+                    : 'bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white',
+                  loading && 'opacity-50 cursor-not-allowed'
                 ]"
               >
                 <span>{{ category }}</span>
                 <button
                   @click.stop="showCategoryInfo = showCategoryInfo === category ? null : category"
+                  :disabled="loading"
                   :class="[
                     'w-4 h-4 rounded-full flex items-center justify-center text-xs transition-colors',
                     selectedCategories.has(category)
@@ -598,7 +606,7 @@ function toggleCategory(category: string) {
                 @blur="handleCountrySearchBlur"
                 type="text"
                 placeholder="Search countries..."
-                :disabled="!canAddMoreCountries"
+                :disabled="!canAddMoreCountries || loading"
                 class="w-full bg-gray-900 border border-gray-700 rounded px-4 py-2 text-sm focus:outline-none focus:border-white disabled:opacity-50 disabled:cursor-not-allowed"
               />
               <div 
@@ -634,7 +642,8 @@ function toggleCategory(category: string) {
                     <span class="text-gray-400">{{ item.allocated.toFixed(1) }}%</span>
                     <button
                       @click="removeCountry(item.name)"
-                      class="text-red-500 hover:text-red-400 text-xs"
+                      :disabled="loading"
+                      class="text-red-500 hover:text-red-400 text-xs disabled:opacity-50 disabled:cursor-not-allowed"
                       title="Remove country"
                     >
                       ✕
@@ -648,10 +657,11 @@ function toggleCategory(category: string) {
                     type="range"
                     :value="item.allocated"
                     @input="updateCountryAllocation(item.name, parseFloat(($event.target as HTMLInputElement).value))"
+                    :disabled="loading"
                     min="0"
                     max="100"
                     step="0.1"
-                    class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer slider"
+                    class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer slider disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                   <!-- Current value indicator (dashed line) -->
                   <div 
@@ -681,7 +691,7 @@ function toggleCategory(category: string) {
                 @blur="handleIndustrySearchBlur"
                 type="text"
                 placeholder="Search industries..."
-                :disabled="!canAddMoreIndustries"
+                :disabled="!canAddMoreIndustries || loading"
                 class="w-full bg-gray-900 border border-gray-700 rounded px-4 py-2 text-sm focus:outline-none focus:border-white disabled:opacity-50 disabled:cursor-not-allowed"
               />
               <div 
@@ -717,7 +727,8 @@ function toggleCategory(category: string) {
                     <span class="text-gray-400">{{ item.allocated.toFixed(1) }}%</span>
                     <button
                       @click="removeIndustry(item.name)"
-                      class="text-red-500 hover:text-red-400 text-xs"
+                      :disabled="loading"
+                      class="text-red-500 hover:text-red-400 text-xs disabled:opacity-50 disabled:cursor-not-allowed"
                       title="Remove industry"
                     >
                       ✕
@@ -731,10 +742,11 @@ function toggleCategory(category: string) {
                     type="range"
                     :value="item.allocated"
                     @input="updateIndustryAllocation(item.name, parseFloat(($event.target as HTMLInputElement).value))"
+                    :disabled="loading"
                     min="0"
                     max="100"
                     step="0.1"
-                    class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer slider"
+                    class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer slider disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                   <!-- Current value indicator (dashed line) -->
                   <div 
@@ -753,7 +765,10 @@ function toggleCategory(category: string) {
           <button
             @click="optimizeAndUpdate"
             :disabled="loading"
-            class="w-full bg-white text-black py-4 text-lg font-medium hover:bg-gray-200 transition-colors disabled:bg-gray-700 disabled:text-gray-400 rounded-lg"
+            :class="[
+              'w-full bg-white text-black py-4 text-lg font-medium hover:bg-gray-200 transition-colors rounded-lg',
+              loading ? 'animate-pulse bg-gray-700 text-gray-400' : ''
+            ]"
           >
             {{ loading ? 'Customizing...' : 'Customize Portfolio' }}
           </button>
