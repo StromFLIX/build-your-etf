@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import HexWorldMap from '@/components/HexWorldMapOptimized.vue'
 import IndustryPieChart from '@/components/IndustryPieChart.vue'
-import PortfolioOutput from '@/components/PortfolioOutput.vue'
+import ETFAllocationTable from '@/components/ETFAllocationTable.vue'
 import { ref, reactive, computed, onMounted, onUnmounted } from 'vue'
-import { optimizePortfolio, getDefaultMSCIWorldData, getAvailableCountries, getAvailableIndustries } from '@/services/etfService'
+import { optimizePortfolio, getDefaultMSCIWorldData, getDefaultETFAllocation, getAvailableCountries, getAvailableIndustries } from '@/services/etfService'
 
 // State
 const allocations = reactive({
@@ -12,6 +12,7 @@ const allocations = reactive({
 })
 
 const portfolioResult = ref(null as any)
+const etfAllocations = ref(getDefaultETFAllocation())
 const loading = ref(false)
 const scrollY = ref(0)
 const countrySearch = ref('')
@@ -213,6 +214,9 @@ async function optimizeAndUpdate() {
     // Update current data with achieved allocations
     currentCountryData.value = result.achieved_countries
     currentIndustryData.value = result.achieved_industries
+    
+    // Update ETF allocations (limited to top 3)
+    etfAllocations.value = result.etf_allocations.slice(0, 3)
   } catch (error) {
     console.error('Optimization failed:', error)
   } finally {
@@ -291,6 +295,7 @@ function resetToMSCI() {
   })
   
   portfolioResult.value = null
+  etfAllocations.value = getDefaultETFAllocation()
   
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
@@ -388,14 +393,19 @@ function resetToMSCI() {
 
     <!-- Charts Section - Stacked -->
     <div class=" bg-black px-6 py-12">
-      <div class="max-w-6xl mx-auto space-y-12">
+      <div class="max-w-6xl mx-auto space-y-8">
         
-
         <!-- Industry Bar Chart -->
         <div class="space-y-4">
           <div class="bg-black" style="height: 120px;">
             <IndustryPieChart :industryData="currentIndustryData" :labelsOpacity="labelsOpacity" />
           </div>
+        </div>
+
+        <!-- ETF Allocation Table -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-light">ETF Allocation</h3>
+          <ETFAllocationTable :allocations="etfAllocations" />
         </div>
       </div>
     </div>
@@ -593,14 +603,6 @@ function resetToMSCI() {
         </div>
       </div>
     </div>
-
-    <!-- Portfolio Output Section -->
-    <section v-if="portfolioResult" class="py-16 px-4 border-t border-gray-800 bg-black">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-light mb-8">Your Optimized ETF Portfolio</h2>
-        <PortfolioOutput :result="portfolioResult" />
-      </div>
-    </section>
   </div>
 </template>
 

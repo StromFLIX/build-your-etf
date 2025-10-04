@@ -1,5 +1,18 @@
 const API_BASE = 'https://build-your-etf.onrender.com'
 
+// Default MSCI World ETF allocation (100% in a single global ETF)
+export function getDefaultETFAllocation() {
+  return [
+    {
+      etf_id: 'default-msci-world',
+      name: 'iShares Core MSCI World UCITS ETF USD (Acc)',
+      ticker: 'EUNL',
+      weight: 1.0,
+      ter: 0.0020
+    }
+  ]
+}
+
 // Default MSCI World data (approximate allocations)
 export function getDefaultMSCIWorldData() {
   return {
@@ -70,7 +83,7 @@ export async function optimizePortfolio(
       countries,
       industries,
       config: {
-        max_etfs: 5,
+        max_etfs: 3,
         max_ter: 1.0,
         min_fund_size: 100,
         excluded_etfs: []
