@@ -41,6 +41,7 @@ const availableIndustries = ref<string[]>([])
 const availableCategories = ref<string[]>([])
 const selectedCategories = ref<Set<string>>(new Set(['Core Market', 'Sectors', 'Thematic']))
 const showCategoryInfo = ref<string | null>(null)
+const maxETFs = ref(3)
 
 // Close tooltip when clicking outside
 function handleClickOutside(event: MouseEvent) {
@@ -247,8 +248,8 @@ async function optimizeAndUpdate() {
     currentCountryData.value = result.achieved_countries
     currentIndustryData.value = result.achieved_industries
     
-    // Update ETF allocations (limited to top 3)
-    etfAllocations.value = result.etf_allocations.slice(0, 3)
+    // Update ETF allocations (limited to maxETFs)
+    etfAllocations.value = result.etf_allocations.slice(0, maxETFs.value)
   } catch (error) {
     console.error('Optimization failed:', error)
   } finally {
@@ -472,7 +473,25 @@ function toggleCategory(category: string) {
 
         <!-- Category Pills -->
         <div class="mb-8">
-          <h3 class="text-sm font-medium text-gray-400 mb-3">ETF Categories</h3>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-sm font-medium text-gray-400">ETF Categories</h3>
+            <div class="flex items-center gap-2 text-xs">
+              <label class="text-gray-500">Show top</label>
+              <select
+                v-model.number="maxETFs"
+                class="bg-gray-900 border border-gray-700 rounded px-2 py-1 text-white focus:outline-none focus:border-white cursor-pointer hover:border-gray-500 transition-colors"
+              >
+                <option :value="1">1</option>
+                <option :value="2">2</option>
+                <option :value="3">3</option>
+                <option :value="5">5</option>
+                <option :value="10">10</option>
+                <option :value="15">15</option>
+                <option :value="20">20</option>
+              </select>
+              <label class="text-gray-500">ETFs</label>
+            </div>
+          </div>
           <div class="flex flex-wrap gap-2">
             <div 
               v-for="category in availableCategories" 
@@ -698,7 +717,7 @@ function toggleCategory(category: string) {
             :disabled="loading"
             class="w-full bg-white text-black py-4 text-lg font-medium hover:bg-gray-200 transition-colors disabled:bg-gray-700 disabled:text-gray-400 rounded-lg"
           >
-            {{ loading ? 'Optimizing...' : 'Optimize Portfolio' }}
+            {{ loading ? 'Customizing...' : 'Customize Portfolio' }}
           </button>
         </div>
       </div>
