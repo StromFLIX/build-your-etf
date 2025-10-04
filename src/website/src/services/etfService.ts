@@ -1,4 +1,7 @@
-const API_BASE = 'https://build-your-etf.onrender.com'
+// Detect environment - use localhost in development, production URL otherwise
+const API_BASE = import.meta.env.DEV 
+  ? 'http://localhost:8000' 
+  : 'https://build-your-etf.onrender.com'
 
 // Default MSCI World ETF allocation (100% in a single global ETF)
 export function getDefaultETFAllocation() {
@@ -72,7 +75,8 @@ export interface OptimizationResult {
 
 export async function optimizePortfolio(
   countries: Record<string, number>, 
-  industries: Record<string, number>
+  industries: Record<string, number>,
+  categories?: string[]
 ): Promise<OptimizationResult> {
   const response = await fetch(`${API_BASE}/optimize`, {
     method: 'POST',
@@ -86,7 +90,8 @@ export async function optimizePortfolio(
         max_etfs: 3,
         max_ter: 1.0,
         min_fund_size: 100,
-        excluded_etfs: []
+        excluded_etfs: [],
+        categories: categories || undefined
       }
     })
   })
@@ -119,6 +124,14 @@ export async function getETFs(limit: number = 50) {
   const response = await fetch(`${API_BASE}/etfs?limit=${limit}`)
   if (!response.ok) {
     throw new Error('Failed to fetch ETFs')
+  }
+  return response.json()
+}
+
+export async function getAvailableCategories(): Promise<string[]> {
+  const response = await fetch(`${API_BASE}/categories`)
+  if (!response.ok) {
+    throw new Error('Failed to fetch categories')
   }
   return response.json()
 }

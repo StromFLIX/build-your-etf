@@ -11,7 +11,8 @@
         "fundSizeMillions": "133963.36",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core S&P 500 UCITS ETF",
@@ -25,7 +26,8 @@
         "fundSizeMillions": "133963.36",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.93"
+        "distYield": "0.93",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core S&P 500 UCITS ETF",
@@ -39,7 +41,8 @@
         "fundSizeMillions": "133963.36",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI World UCITS ETF",
@@ -53,7 +56,8 @@
         "fundSizeMillions": "123055.65",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI World UCITS ETF",
@@ -67,7 +71,8 @@
         "fundSizeMillions": "123055.65",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.15"
+        "distYield": "1.15",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI World UCITS ETF",
@@ -81,7 +86,8 @@
         "fundSizeMillions": "123055.65",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.15"
+        "distYield": "1.15",
+        "category": "Core Market"
     },
     {
         "name": "iShares Nikkei 225 UCITS ETF",
@@ -95,7 +101,8 @@
         "fundSizeMillions": "64141.56",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI EM IMI UCITS ETF",
@@ -109,7 +116,8 @@
         "fundSizeMillions": "30390.72",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI EM IMI UCITS ETF",
@@ -123,7 +131,8 @@
         "fundSizeMillions": "30390.72",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.01"
+        "distYield": "2.01",
+        "category": "Core Market"
     },
     {
         "name": "iShares $ Treasury Bond 0-1yr UCITS ETF",
@@ -137,7 +146,8 @@
         "fundSizeMillions": "24253.34",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.00"
+        "distYield": "0.00",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 0-1yr UCITS ETF",
@@ -151,7 +161,8 @@
         "fundSizeMillions": "24253.34",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI USA ESG Enhanced CTB UCITS ETF",
@@ -165,7 +176,8 @@
         "fundSizeMillions": "24222.45",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI ACWI UCITS ETF",
@@ -179,7 +191,8 @@
         "fundSizeMillions": "24042.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares NASDAQ 100 UCITS ETF",
@@ -193,7 +206,8 @@
         "fundSizeMillions": "22810.07",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Japan Govt Bond UCITS ETF",
@@ -207,7 +221,8 @@
         "fundSizeMillions": "22575.18",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core S&P 500 UCITS ETF USD (Dist)",
@@ -221,7 +236,8 @@
         "fundSizeMillions": "20100.67",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.96"
+        "distYield": "0.96",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI USA Screened UCITS ETF",
@@ -235,7 +251,8 @@
         "fundSizeMillions": "15982.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares S&P 500 Information Technology Sector UCITS ETF",
@@ -249,7 +266,8 @@
         "fundSizeMillions": "14322.75",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares Core € Corp Bond UCITS ETF",
@@ -263,7 +281,8 @@
         "fundSizeMillions": "13730.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.31"
+        "distYield": "3.31",
+        "category": "Stability"
     },
     {
         "name": "iShares Core € Corp Bond UCITS ETF",
@@ -277,7 +296,8 @@
         "fundSizeMillions": "13730.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core € Corp Bond UCITS ETF",
@@ -291,7 +311,8 @@
         "fundSizeMillions": "13730.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core € Corp Bond UCITS ETF",
@@ -305,7 +326,8 @@
         "fundSizeMillions": "13730.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core FTSE 100 UCITS ETF",
@@ -319,7 +341,8 @@
         "fundSizeMillions": "13093.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.22"
+        "distYield": "3.22",
+        "category": "Core Market"
     },
     {
         "name": "iShares S&P 500 Swap UCITS ETF",
@@ -333,7 +356,8 @@
         "fundSizeMillions": "12968.89",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares $ Treasury Bond 1-3yr UCITS ETF",
@@ -347,7 +371,8 @@
         "fundSizeMillions": "12770.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.21"
+        "distYield": "4.21",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 1-3yr UCITS ETF",
@@ -361,7 +386,8 @@
         "fundSizeMillions": "12770.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "14.59"
+        "distYield": "14.59",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 1-3yr UCITS ETF",
@@ -375,7 +401,8 @@
         "fundSizeMillions": "12770.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 1-3yr UCITS ETF",
@@ -389,7 +416,8 @@
         "fundSizeMillions": "12770.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 1-3yr UCITS ETF",
@@ -403,7 +431,8 @@
         "fundSizeMillions": "12770.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core MSCI Europe UCITS ETF EUR (Acc)",
@@ -417,7 +446,8 @@
         "fundSizeMillions": "12210.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core Global Aggregate Bond UCITS ETF",
@@ -431,7 +461,8 @@
         "fundSizeMillions": "11988.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core Global Aggregate Bond UCITS ETF",
@@ -445,7 +476,8 @@
         "fundSizeMillions": "11988.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.04"
+        "distYield": "3.04",
+        "category": "Stability"
     },
     {
         "name": "iShares Core Global Aggregate Bond UCITS ETF",
@@ -459,7 +491,8 @@
         "fundSizeMillions": "11988.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core Global Aggregate Bond UCITS ETF",
@@ -473,7 +506,8 @@
         "fundSizeMillions": "11988.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.01"
+        "distYield": "3.01",
+        "category": "Stability"
     },
     {
         "name": "iShares Core Global Aggregate Bond UCITS ETF",
@@ -487,7 +521,8 @@
         "fundSizeMillions": "11988.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core Global Aggregate Bond UCITS ETF",
@@ -501,7 +536,8 @@
         "fundSizeMillions": "11988.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core Global Aggregate Bond UCITS ETF",
@@ -515,7 +551,8 @@
         "fundSizeMillions": "11988.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.05"
+        "distYield": "3.05",
+        "category": "Stability"
     },
     {
         "name": "iShares Core MSCI Europe UCITS ETF",
@@ -529,7 +566,8 @@
         "fundSizeMillions": "10538.55",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.74"
+        "distYield": "2.74",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI Europe UCITS ETF",
@@ -543,7 +581,8 @@
         "fundSizeMillions": "10538.55",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI Europe UCITS ETF",
@@ -557,7 +596,8 @@
         "fundSizeMillions": "10538.55",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI World SRI UCITS ETF",
@@ -571,7 +611,8 @@
         "fundSizeMillions": "10198.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World SRI UCITS ETF",
@@ -585,7 +626,8 @@
         "fundSizeMillions": "10198.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.26"
+        "distYield": "1.26",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World SRI UCITS ETF",
@@ -599,7 +641,8 @@
         "fundSizeMillions": "10198.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.22"
+        "distYield": "1.22",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World SRI UCITS ETF",
@@ -613,7 +656,8 @@
         "fundSizeMillions": "10198.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.25"
+        "distYield": "1.25",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World SRI UCITS ETF",
@@ -627,7 +671,8 @@
         "fundSizeMillions": "10198.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.23"
+        "distYield": "1.23",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World SRI UCITS ETF",
@@ -641,7 +686,8 @@
         "fundSizeMillions": "10198.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.24"
+        "distYield": "1.24",
+        "category": "Values"
     },
     {
         "name": "iShares $ Treasury Bond 3-7yr UCITS ETF",
@@ -655,7 +701,8 @@
         "fundSizeMillions": "8871.87",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 3-7yr UCITS ETF",
@@ -669,7 +716,8 @@
         "fundSizeMillions": "8871.87",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
@@ -683,7 +731,8 @@
         "fundSizeMillions": "8833.54",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.73"
+        "distYield": "2.73",
+        "category": "Core Market"
     },
     {
         "name": "iShares $ Corp Bond UCITS ETF",
@@ -697,7 +746,8 @@
         "fundSizeMillions": "8785.75",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.90"
+        "distYield": "4.90",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Corp Bond UCITS ETF",
@@ -711,7 +761,8 @@
         "fundSizeMillions": "8785.75",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "18.06"
+        "distYield": "18.06",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Corp Bond UCITS ETF",
@@ -725,7 +776,8 @@
         "fundSizeMillions": "8785.75",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.81"
+        "distYield": "4.81",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Corp Bond UCITS ETF",
@@ -739,7 +791,8 @@
         "fundSizeMillions": "8785.75",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Corp Bond UCITS ETF",
@@ -753,7 +806,8 @@
         "fundSizeMillions": "8785.75",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI World UCITS ETF",
@@ -767,7 +821,8 @@
         "fundSizeMillions": "8530.70",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.98"
+        "distYield": "0.98",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core DAX® UCITS ETF (DE)",
@@ -781,7 +836,8 @@
         "fundSizeMillions": "8526.16",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core EURO STOXX 50 UCITS ETF (DE)",
@@ -795,7 +851,8 @@
         "fundSizeMillions": "7964.41",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.56"
+        "distYield": "2.56",
+        "category": "Core Market"
     },
     {
         "name": "iShares S&P 500 EUR Hedged UCITS ETF (Acc)",
@@ -809,7 +866,8 @@
         "fundSizeMillions": "7698.03",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI EM ESG Enhanced CTB UCITS ETF",
@@ -823,7 +881,8 @@
         "fundSizeMillions": "7574.94",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares € High Yield Corp Bond UCITS ETF",
@@ -837,7 +896,8 @@
         "fundSizeMillions": "7561.87",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.52"
+        "distYield": "5.52",
+        "category": "Stability"
     },
     {
         "name": "iShares € High Yield Corp Bond UCITS ETF",
@@ -851,7 +911,8 @@
         "fundSizeMillions": "7561.87",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares € High Yield Corp Bond UCITS ETF",
@@ -865,7 +926,8 @@
         "fundSizeMillions": "7561.87",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares € High Yield Corp Bond UCITS ETF",
@@ -879,7 +941,8 @@
         "fundSizeMillions": "7561.87",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares J.P. Morgan $ EM Bond UCITS ETF",
@@ -893,7 +956,8 @@
         "fundSizeMillions": "7556.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.70"
+        "distYield": "5.70",
+        "category": "Stability"
     },
     {
         "name": "iShares J.P. Morgan $ EM Bond UCITS ETF",
@@ -907,7 +971,8 @@
         "fundSizeMillions": "7556.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares J.P. Morgan $ EM Bond UCITS ETF",
@@ -921,7 +986,8 @@
         "fundSizeMillions": "7556.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares J.P. Morgan $ EM Bond UCITS ETF",
@@ -935,7 +1001,8 @@
         "fundSizeMillions": "7556.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares J.P. Morgan $ EM Bond UCITS ETF",
@@ -949,7 +1016,8 @@
         "fundSizeMillions": "7556.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Short Duration Corp Bond UCITS ETF",
@@ -963,7 +1031,8 @@
         "fundSizeMillions": "7434.47",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.28"
+        "distYield": "4.28",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Short Duration Corp Bond UCITS ETF",
@@ -977,7 +1046,8 @@
         "fundSizeMillions": "7434.47",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Short Duration Corp Bond UCITS ETF",
@@ -991,7 +1061,8 @@
         "fundSizeMillions": "7434.47",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core MSCI EMU UCITS ETF",
@@ -1005,7 +1076,8 @@
         "fundSizeMillions": "7024.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI EMU UCITS ETF",
@@ -1019,7 +1091,8 @@
         "fundSizeMillions": "7024.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.70"
+        "distYield": "2.70",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI EMU UCITS ETF",
@@ -1033,7 +1106,8 @@
         "fundSizeMillions": "7024.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI Japan IMI UCITS ETF",
@@ -1047,7 +1121,8 @@
         "fundSizeMillions": "6913.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI Japan IMI UCITS ETF",
@@ -1061,7 +1136,8 @@
         "fundSizeMillions": "6913.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.81"
+        "distYield": "1.81",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI Japan IMI UCITS ETF",
@@ -1075,7 +1151,8 @@
         "fundSizeMillions": "6913.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Core MSCI Japan IMI UCITS ETF",
@@ -1089,7 +1166,8 @@
         "fundSizeMillions": "6913.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares $ Treasury Bond 7-10yr UCITS ETF",
@@ -1103,7 +1181,8 @@
         "fundSizeMillions": "6706.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.00"
+        "distYield": "4.00",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 7-10yr UCITS ETF",
@@ -1117,7 +1196,8 @@
         "fundSizeMillions": "6706.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 7-10yr UCITS ETF",
@@ -1131,7 +1211,8 @@
         "fundSizeMillions": "6706.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI World Small Cap UCITS ETF",
@@ -1145,7 +1226,8 @@
         "fundSizeMillions": "6536.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI EM IMI Screened UCITS ETF",
@@ -1159,7 +1241,8 @@
         "fundSizeMillions": "6477.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.02"
+        "distYield": "2.02",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI EM IMI Screened UCITS ETF",
@@ -1173,7 +1256,8 @@
         "fundSizeMillions": "6477.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares $ High Yield Corp Bond UCITS ETF",
@@ -1187,7 +1271,8 @@
         "fundSizeMillions": "6195.82",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "6.16"
+        "distYield": "6.16",
+        "category": "Stability"
     },
     {
         "name": "iShares $ High Yield Corp Bond UCITS ETF",
@@ -1201,7 +1286,8 @@
         "fundSizeMillions": "6195.82",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ High Yield Corp Bond UCITS ETF",
@@ -1215,7 +1301,8 @@
         "fundSizeMillions": "6195.82",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.99"
+        "distYield": "5.99",
+        "category": "Stability"
     },
     {
         "name": "iShares $ High Yield Corp Bond UCITS ETF",
@@ -1229,7 +1316,8 @@
         "fundSizeMillions": "6195.82",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ High Yield Corp Bond UCITS ETF",
@@ -1243,7 +1331,8 @@
         "fundSizeMillions": "6195.82",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI EM UCITS ETF USD (Dist)",
@@ -1257,7 +1346,8 @@
         "fundSizeMillions": "6138.40",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.91"
+        "distYield": "1.91",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI World ESG Enhanced CTB UCITS ETF",
@@ -1271,7 +1361,8 @@
         "fundSizeMillions": "6036.32",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares Core € Govt Bond UCITS ETF",
@@ -1285,7 +1376,8 @@
         "fundSizeMillions": "5870.31",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.32"
+        "distYield": "2.32",
+        "category": "Stability"
     },
     {
         "name": "iShares Core € Govt Bond UCITS ETF",
@@ -1299,7 +1391,8 @@
         "fundSizeMillions": "5870.31",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core EURO STOXX 50 UCITS ETF",
@@ -1313,7 +1406,8 @@
         "fundSizeMillions": "5765.45",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares $ Treasury Bond 20+yr UCITS ETF",
@@ -1327,7 +1421,8 @@
         "fundSizeMillions": "5718.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.31"
+        "distYield": "4.31",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 20+yr UCITS ETF",
@@ -1341,7 +1436,8 @@
         "fundSizeMillions": "5718.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.35"
+        "distYield": "4.35",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 20+yr UCITS ETF",
@@ -1355,7 +1451,8 @@
         "fundSizeMillions": "5718.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.37"
+        "distYield": "4.37",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 20+yr UCITS ETF",
@@ -1369,7 +1466,8 @@
         "fundSizeMillions": "5718.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 20+yr UCITS ETF",
@@ -1383,7 +1481,8 @@
         "fundSizeMillions": "5718.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.22"
+        "distYield": "4.22",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond 20+yr UCITS ETF",
@@ -1397,7 +1496,8 @@
         "fundSizeMillions": "5718.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI World Screened UCITS ETF",
@@ -1411,7 +1511,8 @@
         "fundSizeMillions": "5650.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.16"
+        "distYield": "1.16",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World Screened UCITS ETF",
@@ -1425,7 +1526,8 @@
         "fundSizeMillions": "5650.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares US Aggregate Bond UCITS ETF",
@@ -1439,7 +1541,8 @@
         "fundSizeMillions": "5596.49",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.61"
+        "distYield": "3.61",
+        "category": "Stability"
     },
     {
         "name": "iShares US Aggregate Bond UCITS ETF",
@@ -1453,7 +1556,8 @@
         "fundSizeMillions": "5596.49",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI Europe ESG Enhanced CTB UCITS ETF",
@@ -1467,7 +1571,8 @@
         "fundSizeMillions": "5552.99",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares € Corp Bond ESG SRI UCITS ETF",
@@ -1481,7 +1586,8 @@
         "fundSizeMillions": "5549.48",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.20"
+        "distYield": "3.20",
+        "category": "Values"
     },
     {
         "name": "iShares € Corp Bond ESG SRI UCITS ETF",
@@ -1495,7 +1601,8 @@
         "fundSizeMillions": "5549.48",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.12"
+        "distYield": "3.12",
+        "category": "Values"
     },
     {
         "name": "iShares € Corp Bond ESG SRI UCITS ETF",
@@ -1509,7 +1616,8 @@
         "fundSizeMillions": "5549.48",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI EM UCITS ETF USD (Acc)",
@@ -1523,7 +1631,8 @@
         "fundSizeMillions": "5514.99",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares € Ultrashort Bond UCITS ETF",
@@ -1537,7 +1646,8 @@
         "fundSizeMillions": "5368.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.36"
+        "distYield": "3.36",
+        "category": "Stability"
     },
     {
         "name": "iShares € Ultrashort Bond UCITS ETF",
@@ -1551,7 +1661,8 @@
         "fundSizeMillions": "5368.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI India UCITS ETF",
@@ -1565,7 +1676,8 @@
         "fundSizeMillions": "5294.59",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares $ TIPS UCITS ETF",
@@ -1579,7 +1691,8 @@
         "fundSizeMillions": "5064.62",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ TIPS UCITS ETF",
@@ -1593,7 +1706,8 @@
         "fundSizeMillions": "5064.62",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares € Corp Bond 1-5yr UCITS ETF",
@@ -1607,7 +1721,8 @@
         "fundSizeMillions": "4964.72",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.94"
+        "distYield": "2.94",
+        "category": "Stability"
     },
     {
         "name": "iShares Swiss Dividend ETF (CH)",
@@ -1621,7 +1736,8 @@
         "fundSizeMillions": "4922.83",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "3.83"
+        "distYield": "3.83",
+        "category": "Strategy"
     },
     {
         "name": "iShares $ Floating Rate Bond UCITS ETF",
@@ -1635,7 +1751,8 @@
         "fundSizeMillions": "4876.18",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.48"
+        "distYield": "5.48",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Floating Rate Bond UCITS ETF",
@@ -1649,7 +1766,8 @@
         "fundSizeMillions": "4876.18",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.43"
+        "distYield": "5.43",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Floating Rate Bond UCITS ETF",
@@ -1663,7 +1781,8 @@
         "fundSizeMillions": "4876.18",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.31"
+        "distYield": "5.31",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Floating Rate Bond UCITS ETF",
@@ -1677,7 +1796,8 @@
         "fundSizeMillions": "4876.18",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Floating Rate Bond UCITS ETF",
@@ -1691,7 +1811,8 @@
         "fundSizeMillions": "4876.18",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI World EUR Hedged UCITS ETF (Acc)",
@@ -1705,7 +1826,8 @@
         "fundSizeMillions": "4711.59",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares $ Treasury Bond 7-10yr UCITS ETF USD (Acc)",
@@ -1719,7 +1841,8 @@
         "fundSizeMillions": "4696.61",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core EURO STOXX 50 UCITS ETF EUR (Dist)",
@@ -1733,7 +1856,8 @@
         "fundSizeMillions": "4690.25",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.66"
+        "distYield": "2.66",
+        "category": "Core Market"
     },
     {
         "name": "iShares S&P 500 Equal Weight UCITS ETF",
@@ -1747,7 +1871,8 @@
         "fundSizeMillions": "4645.26",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI Europe Screened UCITS ETF",
@@ -1761,7 +1886,8 @@
         "fundSizeMillions": "4526.96",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI Europe Screened UCITS ETF",
@@ -1775,7 +1901,8 @@
         "fundSizeMillions": "4526.96",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.76"
+        "distYield": "2.76",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI EM Asia UCITS ETF",
@@ -1789,7 +1916,8 @@
         "fundSizeMillions": "4526.65",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI China UCITS ETF",
@@ -1803,7 +1931,8 @@
         "fundSizeMillions": "4431.26",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI China UCITS ETF",
@@ -1817,7 +1946,8 @@
         "fundSizeMillions": "4431.26",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.12"
+        "distYield": "2.12",
+        "category": "Core Market"
     },
     {
         "name": "iShares J.P. Morgan EM Local Govt Bond UCITS ETF",
@@ -1831,7 +1961,8 @@
         "fundSizeMillions": "4422.20",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.34"
+        "distYield": "5.34",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Corp Bond UCITS ETF",
@@ -1845,7 +1976,8 @@
         "fundSizeMillions": "4421.74",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.11"
+        "distYield": "4.11",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Corp Bond UCITS ETF",
@@ -1859,7 +1991,8 @@
         "fundSizeMillions": "4421.74",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "25.35"
+        "distYield": "25.35",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Corp Bond UCITS ETF",
@@ -1873,7 +2006,8 @@
         "fundSizeMillions": "4421.74",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core SPI® ETF (CH)",
@@ -1887,7 +2021,8 @@
         "fundSizeMillions": "4326.65",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "2.93"
+        "distYield": "2.93",
+        "category": "Core Market"
     },
     {
         "name": "iShares Edge MSCI World Quality Factor UCITS ETF",
@@ -1901,7 +2036,8 @@
         "fundSizeMillions": "4282.17",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge MSCI World Value Factor UCITS ETF",
@@ -1915,7 +2051,8 @@
         "fundSizeMillions": "4195.41",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Gold Producers UCITS ETF",
@@ -1929,7 +2066,8 @@
         "fundSizeMillions": "4157.57",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI USA SRI UCITS ETF",
@@ -1943,7 +2081,8 @@
         "fundSizeMillions": "3902.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI USA SRI UCITS ETF",
@@ -1957,7 +2096,8 @@
         "fundSizeMillions": "3902.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.00"
+        "distYield": "1.00",
+        "category": "Values"
     },
     {
         "name": "iShares Global Aggregate Bond ESG SRI UCITS ETF",
@@ -1971,7 +2111,8 @@
         "fundSizeMillions": "3868.05",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares UK Gilts 0-5yr UCITS ETF",
@@ -1985,7 +2126,8 @@
         "fundSizeMillions": "3713.17",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.94"
+        "distYield": "3.94",
+        "category": "Stability"
     },
     {
         "name": "iShares € Corp Bond 0-3Yr ESG SRI UCITS ETF",
@@ -1999,7 +2141,8 @@
         "fundSizeMillions": "3692.24",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.08"
+        "distYield": "3.08",
+        "category": "Values"
     },
     {
         "name": "iShares € Corp Bond 0-3Yr ESG SRI UCITS ETF",
@@ -2013,7 +2156,8 @@
         "fundSizeMillions": "3692.24",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares Core UK Gilts UCITS ETF",
@@ -2027,7 +2171,8 @@
         "fundSizeMillions": "3652.77",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.15"
+        "distYield": "4.15",
+        "category": "Stability"
     },
     {
         "name": "iShares Automation & Robotics UCITS ETF",
@@ -2041,7 +2186,8 @@
         "fundSizeMillions": "3634.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares Automation & Robotics UCITS ETF",
@@ -2055,7 +2201,8 @@
         "fundSizeMillions": "3634.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.34"
+        "distYield": "0.34",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI EM SRI UCITS ETF",
@@ -2069,7 +2216,8 @@
         "fundSizeMillions": "3519.06",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares € High Yield Corp Bond ESG SRI UCITS ETF",
@@ -2083,7 +2231,8 @@
         "fundSizeMillions": "3475.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares € High Yield Corp Bond ESG SRI UCITS ETF",
@@ -2097,7 +2246,8 @@
         "fundSizeMillions": "3475.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares US Mortgage Backed Securities UCITS ETF",
@@ -2111,7 +2261,8 @@
         "fundSizeMillions": "3407.21",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.51"
+        "distYield": "3.51",
+        "category": "Stability"
     },
     {
         "name": "iShares US Mortgage Backed Securities UCITS ETF",
@@ -2125,7 +2276,8 @@
         "fundSizeMillions": "3407.21",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.42"
+        "distYield": "1.42",
+        "category": "Stability"
     },
     {
         "name": "iShares US Mortgage Backed Securities UCITS ETF",
@@ -2139,7 +2291,8 @@
         "fundSizeMillions": "3407.21",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares US Mortgage Backed Securities UCITS ETF",
@@ -2153,7 +2306,8 @@
         "fundSizeMillions": "3407.21",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Core MSCI Pacific ex-Japan UCITS ETF",
@@ -2167,7 +2321,8 @@
         "fundSizeMillions": "3387.12",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI EMU ESG Enhanced CTB UCITS ETF",
@@ -2181,7 +2336,8 @@
         "fundSizeMillions": "3377.76",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares Edge MSCI World Minimum Volatility UCITS ETF",
@@ -2195,7 +2351,8 @@
         "fundSizeMillions": "3374.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge MSCI World Minimum Volatility UCITS ETF",
@@ -2209,7 +2366,8 @@
         "fundSizeMillions": "3374.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge MSCI World Minimum Volatility UCITS ETF",
@@ -2223,7 +2381,8 @@
         "fundSizeMillions": "3374.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge MSCI World Minimum Volatility UCITS ETF",
@@ -2237,7 +2396,8 @@
         "fundSizeMillions": "3374.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.63"
+        "distYield": "1.63",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI EM ex-China UCITS ETF",
@@ -2251,7 +2411,8 @@
         "fundSizeMillions": "3362.18",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI Europe SRI UCITS ETF",
@@ -2265,7 +2426,8 @@
         "fundSizeMillions": "3344.27",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI Europe SRI UCITS ETF",
@@ -2279,7 +2441,8 @@
         "fundSizeMillions": "3344.27",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.33"
+        "distYield": "2.33",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI Europe SRI UCITS ETF",
@@ -2293,7 +2456,8 @@
         "fundSizeMillions": "3344.27",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares JP Morgan Advanced $ EM Bond UCITS ETF",
@@ -2307,7 +2471,8 @@
         "fundSizeMillions": "3254.07",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.31"
+        "distYield": "5.31",
+        "category": "Stability"
     },
     {
         "name": "iShares JP Morgan Advanced $ EM Bond UCITS ETF",
@@ -2321,7 +2486,8 @@
         "fundSizeMillions": "3254.07",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares JP Morgan Advanced $ EM Bond UCITS ETF",
@@ -2335,7 +2501,8 @@
         "fundSizeMillions": "3254.07",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares JP Morgan Advanced $ EM Bond UCITS ETF",
@@ -2349,7 +2516,8 @@
         "fundSizeMillions": "3254.07",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares STOXX Global Select Dividend 100 UCITS ETF (DE)",
@@ -2363,7 +2531,8 @@
         "fundSizeMillions": "3180.33",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "4.55"
+        "distYield": "4.55",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI Brazil UCITS ETF (DE)",
@@ -2377,7 +2546,8 @@
         "fundSizeMillions": "2951.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares STOXX Europe 600 Banks UCITS ETF (DE)",
@@ -2391,7 +2561,8 @@
         "fundSizeMillions": "2937.85",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "4.13"
+        "distYield": "4.13",
+        "category": "Sectors"
     },
     {
         "name": "iShares Global Govt Bond UCITS ETF",
@@ -2405,7 +2576,8 @@
         "fundSizeMillions": "2762.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.88"
+        "distYield": "2.88",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Govt Bond UCITS ETF",
@@ -2419,7 +2591,8 @@
         "fundSizeMillions": "2762.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Govt Bond UCITS ETF",
@@ -2433,7 +2606,8 @@
         "fundSizeMillions": "2762.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.86"
+        "distYield": "2.86",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Govt Bond UCITS ETF",
@@ -2447,7 +2621,8 @@
         "fundSizeMillions": "2762.79",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI World ex-USA UCITS ETF",
@@ -2461,7 +2636,8 @@
         "fundSizeMillions": "2735.11",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Global High Yield Corp Bond UCITS ETF",
@@ -2475,7 +2651,8 @@
         "fundSizeMillions": "2723.61",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.41"
+        "distYield": "5.41",
+        "category": "Stability"
     },
     {
         "name": "iShares Global High Yield Corp Bond UCITS ETF",
@@ -2489,7 +2666,8 @@
         "fundSizeMillions": "2723.61",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Global High Yield Corp Bond UCITS ETF",
@@ -2503,7 +2681,8 @@
         "fundSizeMillions": "2723.61",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Corp Bond ESG SRI​ UCITS ETF",
@@ -2517,7 +2696,8 @@
         "fundSizeMillions": "2674.57",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.69"
+        "distYield": "4.69",
+        "category": "Values"
     },
     {
         "name": "iShares $ Corp Bond ESG SRI​ UCITS ETF",
@@ -2531,7 +2711,8 @@
         "fundSizeMillions": "2674.57",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.60"
+        "distYield": "4.60",
+        "category": "Values"
     },
     {
         "name": "iShares $ Corp Bond ESG SRI​ UCITS ETF",
@@ -2545,7 +2726,8 @@
         "fundSizeMillions": "2674.57",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares $ Corp Bond ESG SRI​ UCITS ETF",
@@ -2559,7 +2741,8 @@
         "fundSizeMillions": "2674.57",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares J.P. Morgan $ EM Corp Bond UCITS ETF",
@@ -2573,7 +2756,8 @@
         "fundSizeMillions": "2672.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.39"
+        "distYield": "5.39",
+        "category": "Stability"
     },
     {
         "name": "iShares J.P. Morgan $ EM Corp Bond UCITS ETF",
@@ -2587,7 +2771,8 @@
         "fundSizeMillions": "2672.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares EURO STOXX UCITS ETF (DE)",
@@ -2601,7 +2786,8 @@
         "fundSizeMillions": "2588.29",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.60"
+        "distYield": "2.60",
+        "category": "Core Market"
     },
     {
         "name": "iShares Global Clean Energy Transition UCITS ETF",
@@ -2615,7 +2801,8 @@
         "fundSizeMillions": "2530.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.10"
+        "distYield": "1.10",
+        "category": "Thematic"
     },
     {
         "name": "iShares Core FTSE 100 UCITS ETF GBP (Acc)",
@@ -2629,7 +2816,8 @@
         "fundSizeMillions": "2508.92",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares S&P 500 Financials Sector UCITS ETF",
@@ -2643,7 +2831,8 @@
         "fundSizeMillions": "2493.24",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI USA UCITS ETF",
@@ -2657,7 +2846,8 @@
         "fundSizeMillions": "2469.22",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI China A UCITS ETF",
@@ -2671,7 +2861,8 @@
         "fundSizeMillions": "2463.34",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Edge MSCI USA Value Factor UCITS ETF",
@@ -2685,7 +2876,8 @@
         "fundSizeMillions": "2373.21",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Global Water UCITS ETF",
@@ -2699,7 +2891,8 @@
         "fundSizeMillions": "2347.95",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.10"
+        "distYield": "1.10",
+        "category": "Thematic"
     },
     {
         "name": "iShares S&P 500 Health Care Sector UCITS ETF",
@@ -2713,7 +2906,8 @@
         "fundSizeMillions": "2335.89",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares S&P 500 Health Care Sector UCITS ETF",
@@ -2727,7 +2921,8 @@
         "fundSizeMillions": "2335.89",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.43"
+        "distYield": "1.43",
+        "category": "Sectors"
     },
     {
         "name": "iShares € Govt Bond Climate UCITS ETF",
@@ -2741,7 +2936,8 @@
         "fundSizeMillions": "2316.20",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares € Govt Bond Climate UCITS ETF",
@@ -2755,7 +2951,8 @@
         "fundSizeMillions": "2316.20",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.61"
+        "distYield": "2.61",
+        "category": "Stability"
     },
     {
         "name": "iShares $ TIPS 0-5 UCITS ETF",
@@ -2769,7 +2966,8 @@
         "fundSizeMillions": "2312.27",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.95"
+        "distYield": "5.95",
+        "category": "Stability"
     },
     {
         "name": "iShares Broad $ High Yield Corp Bond UCITS ETF",
@@ -2783,7 +2981,8 @@
         "fundSizeMillions": "2300.46",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "7.53"
+        "distYield": "7.53",
+        "category": "Stability"
     },
     {
         "name": "iShares Broad $ High Yield Corp Bond UCITS ETF",
@@ -2797,7 +2996,8 @@
         "fundSizeMillions": "2300.46",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Edge MSCI USA Quality Factor UCITS ETF",
@@ -2811,7 +3011,8 @@
         "fundSizeMillions": "2270.65",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares € Govt Bond 3-5yr UCITS ETF",
@@ -2825,7 +3026,8 @@
         "fundSizeMillions": "2269.56",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.62"
+        "distYield": "2.62",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Ultrashort Bond UCITS ETF",
@@ -2839,7 +3041,8 @@
         "fundSizeMillions": "2198.19",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.10"
+        "distYield": "5.10",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Ultrashort Bond UCITS ETF",
@@ -2853,7 +3056,8 @@
         "fundSizeMillions": "2198.19",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Ultrashort Bond UCITS ETF",
@@ -2867,7 +3071,8 @@
         "fundSizeMillions": "2198.19",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ High Yield Corp Bond ESG SRI UCITS ETF",
@@ -2881,7 +3086,8 @@
         "fundSizeMillions": "2192.47",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares $ High Yield Corp Bond ESG SRI UCITS ETF",
@@ -2895,7 +3101,8 @@
         "fundSizeMillions": "2192.47",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI USA Small Cap ESG Enhanced CTB UCITS ETF",
@@ -2909,7 +3116,8 @@
         "fundSizeMillions": "2175.43",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares € Corp Bond Large Cap UCITS ETF",
@@ -2923,7 +3131,8 @@
         "fundSizeMillions": "2115.73",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.95"
+        "distYield": "2.95",
+        "category": "Stability"
     },
     {
         "name": "iShares SMI® ETF (CH)",
@@ -2937,7 +3146,8 @@
         "fundSizeMillions": "2097.29",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "2.84"
+        "distYield": "2.84",
+        "category": "Core Market"
     },
     {
         "name": "iShares S&P SmallCap 600 UCITS ETF",
@@ -2951,7 +3161,8 @@
         "fundSizeMillions": "2085.22",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.21"
+        "distYield": "1.21",
+        "category": "Core Market"
     },
     {
         "name": "iShares Edge MSCI Europe Value Factor UCITS ETF",
@@ -2965,7 +3176,8 @@
         "fundSizeMillions": "2076.39",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares J.P. Morgan $ EM Bond EUR Hedged UCITS ETF (Dist)",
@@ -2979,7 +3191,8 @@
         "fundSizeMillions": "2042.51",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.47"
+        "distYield": "5.47",
+        "category": "Stability"
     },
     {
         "name": "iShares € Govt Bond 1-3yr UCITS ETF EUR (Acc)",
@@ -2993,7 +3206,8 @@
         "fundSizeMillions": "2031.93",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI EMU Screened UCITS ETF",
@@ -3007,7 +3221,8 @@
         "fundSizeMillions": "2012.04",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.80"
+        "distYield": "2.80",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI EMU Screened UCITS ETF",
@@ -3021,7 +3236,8 @@
         "fundSizeMillions": "2012.04",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares iBonds Dec 2028 Term € Corp UCITS ETF",
@@ -3035,7 +3251,8 @@
         "fundSizeMillions": "2004.25",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.23"
+        "distYield": "3.23",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2028 Term € Corp UCITS ETF",
@@ -3049,7 +3266,8 @@
         "fundSizeMillions": "2004.25",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares € Govt Bond 1-3yr UCITS ETF",
@@ -3063,7 +3281,8 @@
         "fundSizeMillions": "2001.39",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.46"
+        "distYield": "2.46",
+        "category": "Stability"
     },
     {
         "name": "iShares € Govt Bond 1-3yr UCITS ETF",
@@ -3077,7 +3296,8 @@
         "fundSizeMillions": "2001.39",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI Japan Screened UCITS ETF",
@@ -3091,7 +3311,8 @@
         "fundSizeMillions": "1991.12",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.68"
+        "distYield": "1.68",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI Japan Screened UCITS ETF",
@@ -3105,7 +3326,8 @@
         "fundSizeMillions": "1991.12",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MDAX® UCITS ETF (DE)",
@@ -3119,7 +3341,8 @@
         "fundSizeMillions": "1939.55",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "0.41"
+        "distYield": "0.41",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI Japan ESG Enhanced CTB UCITS ETF",
@@ -3133,7 +3356,8 @@
         "fundSizeMillions": "1924.04",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares Core CHF Corporate Bond ETF (CH)",
@@ -3147,7 +3371,8 @@
         "fundSizeMillions": "1900.07",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "1.17"
+        "distYield": "1.17",
+        "category": "Stability"
     },
     {
         "name": "iShares Digital Security UCITS ETF",
@@ -3161,7 +3386,8 @@
         "fundSizeMillions": "1889.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares Digital Security UCITS ETF",
@@ -3175,7 +3401,8 @@
         "fundSizeMillions": "1889.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.37"
+        "distYield": "0.37",
+        "category": "Thematic"
     },
     {
         "name": "iShares € Covered Bond UCITS ETF",
@@ -3189,7 +3416,8 @@
         "fundSizeMillions": "1841.59",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.04"
+        "distYield": "2.04",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Short Duration High Yield Corp Bond UCITS ETF",
@@ -3203,7 +3431,8 @@
         "fundSizeMillions": "1840.31",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "6.39"
+        "distYield": "6.39",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Short Duration High Yield Corp Bond UCITS ETF",
@@ -3217,7 +3446,8 @@
         "fundSizeMillions": "1840.31",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Short Duration High Yield Corp Bond UCITS ETF",
@@ -3231,7 +3461,8 @@
         "fundSizeMillions": "1840.31",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Infrastructure UCITS ETF",
@@ -3245,7 +3476,8 @@
         "fundSizeMillions": "1836.53",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.23"
+        "distYield": "2.23",
+        "category": "Thematic"
     },
     {
         "name": "iShares € Aggregate Bond ESG SRI UCITS ETF",
@@ -3259,7 +3491,8 @@
         "fundSizeMillions": "1823.09",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.35"
+        "distYield": "2.35",
+        "category": "Values"
     },
     {
         "name": "iShares China CNY Bond UCITS ETF",
@@ -3273,7 +3506,8 @@
         "fundSizeMillions": "1814.63",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.07"
+        "distYield": "2.07",
+        "category": "Stability"
     },
     {
         "name": "iShares China CNY Bond UCITS ETF",
@@ -3287,7 +3521,8 @@
         "fundSizeMillions": "1814.63",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.00"
+        "distYield": "2.00",
+        "category": "Stability"
     },
     {
         "name": "iShares China CNY Bond UCITS ETF",
@@ -3301,7 +3536,8 @@
         "fundSizeMillions": "1814.63",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI EMU Paris-Aligned Climate UCITS ETF",
@@ -3315,7 +3551,8 @@
         "fundSizeMillions": "1800.59",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI China Tech UCITS ETF",
@@ -3329,7 +3566,8 @@
         "fundSizeMillions": "1781.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Dow Jones Global Leaders Screened UCITS ETF",
@@ -3343,7 +3581,8 @@
         "fundSizeMillions": "1759.31",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI Japan UCITS ETF USD (Dist)",
@@ -3357,7 +3596,8 @@
         "fundSizeMillions": "1746.45",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.74"
+        "distYield": "1.74",
+        "category": "Core Market"
     },
     {
         "name": "iShares £ Corp Bond 0-5yr UCITS ETF",
@@ -3371,7 +3611,8 @@
         "fundSizeMillions": "1721.30",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.42"
+        "distYield": "4.42",
+        "category": "Stability"
     },
     {
         "name": "iShares Core £ Corp Bond UCITS ETF",
@@ -3385,7 +3626,8 @@
         "fundSizeMillions": "1698.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.85"
+        "distYield": "4.85",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI USA Swap UCITS ETF",
@@ -3399,7 +3641,8 @@
         "fundSizeMillions": "1685.87",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge S&P 500 Minimum Volatility UCITS ETF",
@@ -3413,7 +3656,8 @@
         "fundSizeMillions": "1605.36",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge S&P 500 Minimum Volatility UCITS ETF",
@@ -3427,7 +3671,8 @@
         "fundSizeMillions": "1605.36",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge S&P 500 Minimum Volatility UCITS ETF",
@@ -3441,7 +3686,8 @@
         "fundSizeMillions": "1605.36",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.18"
+        "distYield": "1.18",
+        "category": "Strategy"
     },
     {
         "name": "iShares Dow Jones Industrial Average UCITS ETF",
@@ -3455,7 +3701,8 @@
         "fundSizeMillions": "1590.84",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Developed Markets Property Yield UCITS ETF",
@@ -3469,7 +3716,8 @@
         "fundSizeMillions": "1559.74",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.02"
+        "distYield": "3.02",
+        "category": "Thematic"
     },
     {
         "name": "iShares EURO STOXX Banks 30-15 UCITS ETF (DE)",
@@ -3483,7 +3731,8 @@
         "fundSizeMillions": "1553.93",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "3.93"
+        "distYield": "3.93",
+        "category": "Sectors"
     },
     {
         "name": "iShares Listed Private Equity UCITS ETF",
@@ -3497,7 +3746,8 @@
         "fundSizeMillions": "1543.25",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.80"
+        "distYield": "2.80",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI Canada UCITS ETF",
@@ -3511,7 +3761,8 @@
         "fundSizeMillions": "1540.15",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares € Inflation Linked Govt Bond UCITS ETF",
@@ -3525,7 +3776,8 @@
         "fundSizeMillions": "1477.01",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI World CHF Hedged UCITS ETF (Acc)",
@@ -3539,7 +3791,8 @@
         "fundSizeMillions": "1466.94",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Diversified Commodity Swap UCITS ETF",
@@ -3553,7 +3806,8 @@
         "fundSizeMillions": "1452.61",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares NASDAQ 100 Swap UCITS ETF",
@@ -3567,7 +3821,8 @@
         "fundSizeMillions": "1408.26",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI Global Semiconductors UCITS ETF",
@@ -3581,7 +3836,8 @@
         "fundSizeMillions": "1395.12",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI Europe ex-UK UCITS ETF",
@@ -3595,7 +3851,8 @@
         "fundSizeMillions": "1344.15",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.28"
+        "distYield": "2.28",
+        "category": "Core Market"
     },
     {
         "name": "iShares European Property Yield UCITS ETF",
@@ -3609,7 +3866,8 @@
         "fundSizeMillions": "1330.18",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.92"
+        "distYield": "2.92",
+        "category": "Thematic"
     },
     {
         "name": "iShares Gold ETF (CH)",
@@ -3623,7 +3881,8 @@
         "fundSizeMillions": "1285.52",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares iBonds Dec 2026 Term € Corp UCITS ETF",
@@ -3637,7 +3896,8 @@
         "fundSizeMillions": "1283.39",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.31"
+        "distYield": "3.31",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2026 Term € Corp UCITS ETF",
@@ -3651,7 +3911,8 @@
         "fundSizeMillions": "1283.39",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI North America UCITS ETF",
@@ -3665,7 +3926,8 @@
         "fundSizeMillions": "1282.17",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.70"
+        "distYield": "0.70",
+        "category": "Core Market"
     },
     {
         "name": "iShares Global Inflation Linked Govt Bond UCITS ETF",
@@ -3679,7 +3941,8 @@
         "fundSizeMillions": "1194.67",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Inflation Linked Govt Bond UCITS ETF",
@@ -3693,7 +3956,8 @@
         "fundSizeMillions": "1194.67",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.09"
+        "distYield": "1.09",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Inflation Linked Govt Bond UCITS ETF",
@@ -3707,7 +3971,8 @@
         "fundSizeMillions": "1194.67",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Inflation Linked Govt Bond UCITS ETF",
@@ -3721,7 +3986,8 @@
         "fundSizeMillions": "1194.67",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.08"
+        "distYield": "1.08",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2028 Term $ Corp UCITS ETF",
@@ -3735,7 +4001,8 @@
         "fundSizeMillions": "1179.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2028 Term $ Corp UCITS ETF",
@@ -3749,7 +4016,8 @@
         "fundSizeMillions": "1179.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.71"
+        "distYield": "4.71",
+        "category": "Stability"
     },
     {
         "name": "iShares China Large Cap UCITS ETF",
@@ -3763,7 +4031,8 @@
         "fundSizeMillions": "1177.13",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.66"
+        "distYield": "1.66",
+        "category": "Core Market"
     },
     {
         "name": "iShares € Govt Bond 3-7yr UCITS ETF",
@@ -3777,7 +4046,8 @@
         "fundSizeMillions": "1161.51",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Corp Bond 0-3Yr ESG SRI UCITS ETF",
@@ -3791,7 +4061,8 @@
         "fundSizeMillions": "1144.43",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.67"
+        "distYield": "4.67",
+        "category": "Values"
     },
     {
         "name": "iShares $ Corp Bond 0-3Yr ESG SRI UCITS ETF",
@@ -3805,7 +4076,8 @@
         "fundSizeMillions": "1144.43",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares $ Corp Bond 0-3Yr ESG SRI UCITS ETF",
@@ -3819,7 +4091,8 @@
         "fundSizeMillions": "1144.43",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.51"
+        "distYield": "4.51",
+        "category": "Values"
     },
     {
         "name": "iShares $ Corp Bond 0-3Yr ESG SRI UCITS ETF",
@@ -3833,7 +4106,8 @@
         "fundSizeMillions": "1144.43",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares $ Corp Bond 0-3Yr ESG SRI UCITS ETF",
@@ -3847,7 +4121,8 @@
         "fundSizeMillions": "1144.43",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World Information Technology Sector Advanced UCITS ETF",
@@ -3861,7 +4136,8 @@
         "fundSizeMillions": "1136.47",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.34"
+        "distYield": "0.34",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI AC Far East ex-Japan UCITS ETF",
@@ -3875,7 +4151,8 @@
         "fundSizeMillions": "1130.55",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.52"
+        "distYield": "1.52",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI AC Far East ex-Japan UCITS ETF",
@@ -3889,7 +4166,8 @@
         "fundSizeMillions": "1130.55",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Global Corp Bond EUR Hedged UCITS ETF (Dist)",
@@ -3903,7 +4181,8 @@
         "fundSizeMillions": "1124.31",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.82"
+        "distYield": "3.82",
+        "category": "Stability"
     },
     {
         "name": "iShares € Floating Rate Bond Advanced UCITS ETF",
@@ -3917,7 +4196,8 @@
         "fundSizeMillions": "1122.56",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.65"
+        "distYield": "3.65",
+        "category": "Stability"
     },
     {
         "name": "iShares Italy Govt Bond UCITS ETF",
@@ -3931,7 +4211,8 @@
         "fundSizeMillions": "1116.97",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.79"
+        "distYield": "2.79",
+        "category": "Stability"
     },
     {
         "name": "iShares € Corp Bond ex-Financials 1-5Yr ESG SRI UCITS ETF",
@@ -3945,7 +4226,8 @@
         "fundSizeMillions": "1115.94",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.57"
+        "distYield": "2.57",
+        "category": "Values"
     },
     {
         "name": "iShares € Corp Bond ex-Financials 1-5Yr ESG SRI UCITS ETF",
@@ -3959,7 +4241,8 @@
         "fundSizeMillions": "1115.94",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares € Corp Bond ex-Financials UCITS ETF",
@@ -3973,7 +4256,8 @@
         "fundSizeMillions": "1110.63",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.66"
+        "distYield": "2.66",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI Japan UCITS ETF",
@@ -3987,7 +4271,8 @@
         "fundSizeMillions": "1110.24",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Euro Dividend UCITS ETF",
@@ -4001,7 +4286,8 @@
         "fundSizeMillions": "1090.96",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.71"
+        "distYield": "4.71",
+        "category": "Strategy"
     },
     {
         "name": "iShares US Equity Enhanced Active UCITS ETF",
@@ -4015,7 +4301,8 @@
         "fundSizeMillions": "1057.55",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge MSCI World Minimum Volatility Advanced UCITS ETF",
@@ -4029,7 +4316,8 @@
         "fundSizeMillions": "1044.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge MSCI World Minimum Volatility Advanced UCITS ETF",
@@ -4043,7 +4331,8 @@
         "fundSizeMillions": "1044.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge MSCI World Minimum Volatility Advanced UCITS ETF",
@@ -4057,7 +4346,8 @@
         "fundSizeMillions": "1044.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares SMIM® ETF (CH)",
@@ -4071,7 +4361,8 @@
         "fundSizeMillions": "1032.18",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "1.89"
+        "distYield": "1.89",
+        "category": "Core Market"
     },
     {
         "name": "iShares UK Dividend UCITS ETF",
@@ -4085,7 +4376,8 @@
         "fundSizeMillions": "1008.10",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.34"
+        "distYield": "5.34",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI EMU Small Cap UCITS ETF",
@@ -4099,7 +4391,8 @@
         "fundSizeMillions": "992.42",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares iBonds Dec 2027 Term € Corp UCITS ETF",
@@ -4113,7 +4406,8 @@
         "fundSizeMillions": "981.88",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.16"
+        "distYield": "3.16",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2027 Term € Corp UCITS ETF",
@@ -4127,7 +4421,8 @@
         "fundSizeMillions": "981.88",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Digitalisation UCITS ETF",
@@ -4141,7 +4436,8 @@
         "fundSizeMillions": "974.68",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares S&P U.S. Banks UCITS ETF",
@@ -4155,7 +4451,8 @@
         "fundSizeMillions": "973.54",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares Fallen Angels High Yield Corp Bond UCITS ETF",
@@ -4169,7 +4466,8 @@
         "fundSizeMillions": "970.16",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.55"
+        "distYield": "5.55",
+        "category": "Stability"
     },
     {
         "name": "iShares € Govt Bond 7-10yr UCITS ETF",
@@ -4183,7 +4481,8 @@
         "fundSizeMillions": "962.78",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.79"
+        "distYield": "2.79",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI Europe Quality Dividend Advanced UCITS ETF",
@@ -4197,7 +4496,8 @@
         "fundSizeMillions": "962.29",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.36"
+        "distYield": "4.36",
+        "category": "Strategy"
     },
     {
         "name": "iShares Healthcare Innovation UCITS ETF",
@@ -4211,7 +4511,8 @@
         "fundSizeMillions": "941.75",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares STOXX Europe 600 Construction & Materials UCITS ETF (DE)",
@@ -4225,7 +4526,8 @@
         "fundSizeMillions": "921.75",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "1.49"
+        "distYield": "1.49",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI EM Latin America UCITS ETF",
@@ -4239,7 +4541,8 @@
         "fundSizeMillions": "909.85",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.08"
+        "distYield": "4.08",
+        "category": "Core Market"
     },
     {
         "name": "iShares € Corp Bond ESG Paris-Aligned Climate UCITS ETF",
@@ -4253,7 +4556,8 @@
         "fundSizeMillions": "891.30",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares EM Dividend UCITS ETF",
@@ -4267,7 +4571,8 @@
         "fundSizeMillions": "882.68",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "7.11"
+        "distYield": "7.11",
+        "category": "Strategy"
     },
     {
         "name": "iShares € Govt Bond 0-1yr UCITS ETF",
@@ -4281,7 +4586,8 @@
         "fundSizeMillions": "865.80",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.81"
+        "distYield": "2.81",
+        "category": "Stability"
     },
     {
         "name": "iShares € Govt Bond 0-1yr UCITS ETF",
@@ -4295,7 +4601,8 @@
         "fundSizeMillions": "865.80",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares € Govt Bond 15-30yr UCITS ETF",
@@ -4309,7 +4616,8 @@
         "fundSizeMillions": "858.51",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.45"
+        "distYield": "3.45",
+        "category": "Stability"
     },
     {
         "name": "iShares S&P 500 Communication Sector UCITS ETF",
@@ -4323,7 +4631,8 @@
         "fundSizeMillions": "838.02",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares Edge MSCI Europe Minimum Volatility UCITS ETF",
@@ -4337,7 +4646,8 @@
         "fundSizeMillions": "836.13",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge MSCI Europe Minimum Volatility UCITS ETF",
@@ -4351,7 +4661,8 @@
         "fundSizeMillions": "836.13",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.64"
+        "distYield": "2.64",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI World Islamic UCITS ETF",
@@ -4365,7 +4676,8 @@
         "fundSizeMillions": "831.33",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.18"
+        "distYield": "1.18",
+        "category": "Values"
     },
     {
         "name": "iShares World Equity Enhanced Active UCITS ETF",
@@ -4379,7 +4691,8 @@
         "fundSizeMillions": "813.81",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares STOXX World Equity Multifactor UCITS ETF",
@@ -4393,7 +4706,8 @@
         "fundSizeMillions": "799.57",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares STOXX World Equity Multifactor UCITS ETF",
@@ -4407,7 +4721,8 @@
         "fundSizeMillions": "799.57",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares STOXX World Equity Multifactor UCITS ETF",
@@ -4421,7 +4736,8 @@
         "fundSizeMillions": "799.57",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares € Govt Bond 7-10yr UCITS ETF EUR (Acc)",
@@ -4435,7 +4751,8 @@
         "fundSizeMillions": "798.25",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Global Aerospace & Defence UCITS ETF",
@@ -4449,7 +4766,8 @@
         "fundSizeMillions": "791.96",
         "fundSizeAsOf": "03.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares Edge MSCI Europe Momentum Factor UCITS ETF",
@@ -4463,7 +4781,8 @@
         "fundSizeMillions": "782.89",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares S&P 500 Consumer Discretionary Sector UCITS ETF",
@@ -4477,7 +4796,8 @@
         "fundSizeMillions": "753.21",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares S&P 500 Paris-Aligned Climate UCITS ETF",
@@ -4491,7 +4811,8 @@
         "fundSizeMillions": "753.16",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI USA Quality Dividend Advanced UCITS ETF",
@@ -4505,7 +4826,8 @@
         "fundSizeMillions": "738.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.26"
+        "distYield": "2.26",
+        "category": "Strategy"
     },
     {
         "name": "iShares S&P 500 CHF Hedged UCITS ETF (Acc)",
@@ -4519,7 +4841,8 @@
         "fundSizeMillions": "738.45",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares S&P 500 Scored and Screened UCITS ETF",
@@ -4533,7 +4856,8 @@
         "fundSizeMillions": "738.11",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares AEX UCITS ETF",
@@ -4547,7 +4871,8 @@
         "fundSizeMillions": "726.78",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.10"
+        "distYield": "2.10",
+        "category": "Core Market"
     },
     {
         "name": "iShares AEX UCITS ETF",
@@ -4561,7 +4886,8 @@
         "fundSizeMillions": "726.78",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares S&P 500 Utilities Sector UCITS ETF",
@@ -4575,7 +4901,8 @@
         "fundSizeMillions": "718.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI Japan EUR Hedged UCITS ETF (Acc)",
@@ -4589,7 +4916,8 @@
         "fundSizeMillions": "718.11",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares STOXX Europe 600 Health Care UCITS ETF (DE)",
@@ -4603,7 +4931,8 @@
         "fundSizeMillions": "717.45",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "1.75"
+        "distYield": "1.75",
+        "category": "Sectors"
     },
     {
         "name": "iShares SLI® ETF (CH)",
@@ -4617,7 +4946,8 @@
         "fundSizeMillions": "711.94",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "2.62"
+        "distYield": "2.62",
+        "category": "Core Market"
     },
     {
         "name": "iShares FTSE 250 UCITS ETF",
@@ -4631,7 +4961,8 @@
         "fundSizeMillions": "708.82",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.57"
+        "distYield": "3.57",
+        "category": "Core Market"
     },
     {
         "name": "iShares € Cash UCITS ETF",
@@ -4645,7 +4976,8 @@
         "fundSizeMillions": "698.32",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI World Energy Sector UCITS ETF",
@@ -4659,7 +4991,8 @@
         "fundSizeMillions": "687.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.17"
+        "distYield": "3.17",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI Japan SRI UCITS ETF",
@@ -4673,7 +5006,8 @@
         "fundSizeMillions": "684.22",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI Japan SRI UCITS ETF",
@@ -4687,7 +5021,8 @@
         "fundSizeMillions": "684.22",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.51"
+        "distYield": "1.51",
+        "category": "Values"
     },
     {
         "name": "iShares S&P 500 Energy Sector UCITS ETF",
@@ -4701,7 +5036,8 @@
         "fundSizeMillions": "682.59",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares iBonds Dec 2025 Term € Corp UCITS ETF",
@@ -4715,7 +5051,8 @@
         "fundSizeMillions": "663.30",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares STOXX Europe 50 UCITS ETF",
@@ -4729,7 +5066,8 @@
         "fundSizeMillions": "656.87",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.56"
+        "distYield": "2.56",
+        "category": "Core Market"
     },
     {
         "name": "iShares $ Treasury Bond 1-3yr UCITS ETF USD (Acc) B",
@@ -4743,7 +5081,8 @@
         "fundSizeMillions": "645.02",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares TecDAX® UCITS ETF (DE)",
@@ -4757,7 +5096,8 @@
         "fundSizeMillions": "642.06",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "0.04"
+        "distYield": "0.04",
+        "category": "Core Market"
     },
     {
         "name": "iShares € Govt Bond 5-7yr UCITS ETF",
@@ -4771,7 +5111,8 @@
         "fundSizeMillions": "638.26",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.68"
+        "distYield": "2.68",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI Taiwan UCITS ETF",
@@ -4785,7 +5126,8 @@
         "fundSizeMillions": "631.36",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.61"
+        "distYield": "1.61",
+        "category": "Core Market"
     },
     {
         "name": "iShares Edge MSCI USA Momentum Factor UCITS ETF",
@@ -4799,7 +5141,8 @@
         "fundSizeMillions": "627.13",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares US Property Yield UCITS ETF",
@@ -4813,7 +5156,8 @@
         "fundSizeMillions": "597.49",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.06"
+        "distYield": "3.06",
+        "category": "Thematic"
     },
     {
         "name": "iShares Nasdaq US Biotechnology UCITS ETF",
@@ -4827,7 +5171,8 @@
         "fundSizeMillions": "596.20",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares iBonds Dec 2030 Term € Corp UCITS ETF",
@@ -4841,7 +5186,8 @@
         "fundSizeMillions": "589.17",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.13"
+        "distYield": "3.13",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2030 Term € Corp UCITS ETF",
@@ -4855,7 +5201,8 @@
         "fundSizeMillions": "589.17",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Ageing Population UCITS ETF",
@@ -4869,7 +5216,8 @@
         "fundSizeMillions": "561.49",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares iBonds Dec 2026 Term $ Corp UCITS ETF",
@@ -4883,7 +5231,8 @@
         "fundSizeMillions": "558.47",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2026 Term $ Corp UCITS ETF",
@@ -4897,7 +5246,8 @@
         "fundSizeMillions": "558.47",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.92"
+        "distYield": "4.92",
+        "category": "Stability"
     },
     {
         "name": "iShares Gold CHF Hedged ETF (CH)",
@@ -4911,7 +5261,8 @@
         "fundSizeMillions": "550.99",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares Bitcoin ETP",
@@ -4925,7 +5276,8 @@
         "fundSizeMillions": "545.73",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares € Corp Bond Financials UCITS ETF",
@@ -4939,7 +5291,8 @@
         "fundSizeMillions": "542.46",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.01"
+        "distYield": "3.01",
+        "category": "Stability"
     },
     {
         "name": "iShares € High Yield Corp Bond ESG Paris-Aligned Climate UCITS ETF",
@@ -4953,7 +5306,8 @@
         "fundSizeMillions": "539.40",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.16"
+        "distYield": "5.16",
+        "category": "Values"
     },
     {
         "name": "iShares $ Treasury Bond UCITS ETF",
@@ -4967,7 +5321,8 @@
         "fundSizeMillions": "525.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.08"
+        "distYield": "4.08",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Treasury Bond UCITS ETF",
@@ -4981,7 +5336,8 @@
         "fundSizeMillions": "525.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.01"
+        "distYield": "4.01",
+        "category": "Stability"
     },
     {
         "name": "iShares DivDAX® UCITS ETF (DE)",
@@ -4995,7 +5351,8 @@
         "fundSizeMillions": "517.57",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "3.42"
+        "distYield": "3.42",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI World Paris-Aligned Climate UCITS ETF",
@@ -5009,7 +5366,8 @@
         "fundSizeMillions": "511.46",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World Financials Sector Advanced UCITS ETF",
@@ -5023,7 +5381,8 @@
         "fundSizeMillions": "503.50",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.25"
+        "distYield": "2.25",
+        "category": "Sectors"
     },
     {
         "name": "iShares Edge MSCI Europe Quality Factor UCITS ETF",
@@ -5037,7 +5396,8 @@
         "fundSizeMillions": "502.85",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Swiss Domestic Government Bond 7-15 ETF (CH)",
@@ -5051,7 +5411,8 @@
         "fundSizeMillions": "499.74",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "1.14"
+        "distYield": "1.14",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI World Health Care Sector Advanced UCITS ETF",
@@ -5065,7 +5426,8 @@
         "fundSizeMillions": "491.21",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.10"
+        "distYield": "1.10",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI Japan Small Cap UCITS ETF",
@@ -5079,7 +5441,8 @@
         "fundSizeMillions": "486.48",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.81"
+        "distYield": "1.81",
+        "category": "Core Market"
     },
     {
         "name": "iShares Asia Pacific Dividend UCITS ETF",
@@ -5093,7 +5456,8 @@
         "fundSizeMillions": "483.70",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.43"
+        "distYield": "4.43",
+        "category": "Strategy"
     },
     {
         "name": "iShares EURO STOXX Mid UCITS ETF",
@@ -5107,7 +5471,8 @@
         "fundSizeMillions": "477.66",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.58"
+        "distYield": "3.58",
+        "category": "Core Market"
     },
     {
         "name": "iShares STOXX Europe 600 Insurance UCITS ETF (DE)",
@@ -5121,7 +5486,8 @@
         "fundSizeMillions": "474.35",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "3.60"
+        "distYield": "3.60",
+        "category": "Sectors"
     },
     {
         "name": "iShares $ High Yield Corp Bond ESG Paris-Aligned Climate UCITS ETF",
@@ -5135,7 +5501,8 @@
         "fundSizeMillions": "473.55",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "7.03"
+        "distYield": "7.03",
+        "category": "Values"
     },
     {
         "name": "iShares S&P 500 Industrials Sector UCITS ETF",
@@ -5149,7 +5516,8 @@
         "fundSizeMillions": "471.57",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares SLI UCITS ETF (DE)",
@@ -5163,7 +5531,8 @@
         "fundSizeMillions": "470.93",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "1.40"
+        "distYield": "1.40",
+        "category": "Core Market"
     },
     {
         "name": "iShares UK Property UCITS ETF",
@@ -5177,7 +5546,8 @@
         "fundSizeMillions": "468.83",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.47"
+        "distYield": "4.47",
+        "category": "Thematic"
     },
     {
         "name": "iShares Electric Vehicles and Driving Technology UCITS ETF",
@@ -5191,7 +5561,8 @@
         "fundSizeMillions": "457.63",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares STOXX Europe 600 Oil & Gas UCITS ETF (DE)",
@@ -5205,7 +5576,8 @@
         "fundSizeMillions": "446.60",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "4.27"
+        "distYield": "4.27",
+        "category": "Sectors"
     },
     {
         "name": "iShares € Corp Bond BBB-BB UCITS ETF",
@@ -5219,7 +5591,8 @@
         "fundSizeMillions": "439.35",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.97"
+        "distYield": "2.97",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2030 Term $ Corp UCITS ETF",
@@ -5233,7 +5606,8 @@
         "fundSizeMillions": "433.51",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.54"
+        "distYield": "4.54",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2030 Term $ Corp UCITS ETF",
@@ -5247,7 +5621,8 @@
         "fundSizeMillions": "433.51",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI Saudi Arabia Capped UCITS ETF",
@@ -5261,7 +5636,8 @@
         "fundSizeMillions": "431.61",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares STOXX Europe 600 Industrial Goods & Services UCITS ETF (DE)",
@@ -5275,7 +5651,8 @@
         "fundSizeMillions": "430.58",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "1.31"
+        "distYield": "1.31",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI Australia UCITS ETF",
@@ -5289,7 +5666,8 @@
         "fundSizeMillions": "428.15",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI Poland UCITS ETF",
@@ -5303,7 +5681,8 @@
         "fundSizeMillions": "421.75",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares STOXX Europe Equity Multifactor UCITS ETF",
@@ -5317,7 +5696,8 @@
         "fundSizeMillions": "415.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Swiss Domestic Government Bond 3-7 ETF (CH)",
@@ -5331,7 +5711,8 @@
         "fundSizeMillions": "409.93",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "1.76"
+        "distYield": "1.76",
+        "category": "Stability"
     },
     {
         "name": "iShares Pfandbriefe UCITS ETF (DE)",
@@ -5345,7 +5726,8 @@
         "fundSizeMillions": "407.33",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "1.56"
+        "distYield": "1.56",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2029 Term € Corp UCITS ETF",
@@ -5359,7 +5741,8 @@
         "fundSizeMillions": "407.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.00"
+        "distYield": "3.00",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2029 Term € Corp UCITS ETF",
@@ -5373,7 +5756,8 @@
         "fundSizeMillions": "407.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares EURO STOXX Small UCITS ETF",
@@ -5387,7 +5771,8 @@
         "fundSizeMillions": "404.63",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.11"
+        "distYield": "3.11",
+        "category": "Core Market"
     },
     {
         "name": "iShares J.P. Morgan Advanced $ EM Investment Grade Bond UCITS ETF",
@@ -5401,7 +5786,8 @@
         "fundSizeMillions": "399.68",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2027 Term $ Corp UCITS ETF",
@@ -5415,7 +5801,8 @@
         "fundSizeMillions": "398.80",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2029 Term $ Corp UCITS ETF",
@@ -5429,7 +5816,8 @@
         "fundSizeMillions": "393.34",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.62"
+        "distYield": "4.62",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2029 Term $ Corp UCITS ETF",
@@ -5443,7 +5831,8 @@
         "fundSizeMillions": "393.34",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Smart City Infrastructure UCITS ETF",
@@ -5457,7 +5846,8 @@
         "fundSizeMillions": "393.19",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.87"
+        "distYield": "0.87",
+        "category": "Thematic"
     },
     {
         "name": "iShares Smart City Infrastructure UCITS ETF",
@@ -5471,7 +5861,8 @@
         "fundSizeMillions": "393.19",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares S&P 500 Consumer Staples Sector UCITS ETF",
@@ -5485,7 +5876,8 @@
         "fundSizeMillions": "387.71",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares STOXX Europe 600 Utilities UCITS ETF (DE)",
@@ -5499,7 +5891,8 @@
         "fundSizeMillions": "387.50",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "3.59"
+        "distYield": "3.59",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI Japan USD Hedged UCITS ETF (Acc)",
@@ -5513,7 +5906,8 @@
         "fundSizeMillions": "379.03",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI EM Islamic UCITS ETF",
@@ -5527,7 +5921,8 @@
         "fundSizeMillions": "366.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.00"
+        "distYield": "2.00",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI Korea UCITS ETF USD (Dist)",
@@ -5541,7 +5936,8 @@
         "fundSizeMillions": "365.27",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.03"
+        "distYield": "1.03",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI EMU Mid Cap UCITS ETF",
@@ -5555,7 +5951,8 @@
         "fundSizeMillions": "361.32",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Blockchain Technology UCITS ETF",
@@ -5569,7 +5966,8 @@
         "fundSizeMillions": "360.54",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares Agribusiness UCITS ETF",
@@ -5583,7 +5981,8 @@
         "fundSizeMillions": "353.19",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI Brazil UCITS ETF USD (Dist)",
@@ -5597,7 +5996,8 @@
         "fundSizeMillions": "350.20",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.41"
+        "distYield": "4.41",
+        "category": "Core Market"
     },
     {
         "name": "iShares Emerging Markets Equity Enhanced Active UCITS ETF",
@@ -5611,7 +6011,8 @@
         "fundSizeMillions": "344.69",
         "fundSizeAsOf": "03.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares € Govt Bond 10-15yr UCITS ETF",
@@ -5625,7 +6026,8 @@
         "fundSizeMillions": "342.69",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.18"
+        "distYield": "3.18",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI EM Small Cap UCITS ETF",
@@ -5639,7 +6041,8 @@
         "fundSizeMillions": "335.83",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.70"
+        "distYield": "1.70",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI World Mid-Cap Equal Weight UCITS ETF",
@@ -5653,7 +6056,8 @@
         "fundSizeMillions": "335.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI USA Mid-Cap Equal Weight UCITS ETF",
@@ -5667,7 +6071,8 @@
         "fundSizeMillions": "315.39",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Europe Equity Enhanced Active UCITS ETF",
@@ -5681,7 +6086,8 @@
         "fundSizeMillions": "312.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge MSCI EM Minimum Volatility UCITS ETF",
@@ -5695,7 +6101,8 @@
         "fundSizeMillions": "311.46",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares iBonds Dec 2025 Term $ Corp UCITS ETF",
@@ -5709,7 +6116,8 @@
         "fundSizeMillions": "307.22",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares FTSE MIB UCITS ETF EUR (Acc)",
@@ -5723,7 +6131,8 @@
         "fundSizeMillions": "295.60",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Gold EUR Hedged ETF (CH)",
@@ -5737,7 +6146,8 @@
         "fundSizeMillions": "294.82",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares € Govt Bond 20yr Target Duration UCITS ETF",
@@ -5751,7 +6161,8 @@
         "fundSizeMillions": "292.44",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.34"
+        "distYield": "3.34",
+        "category": "Stability"
     },
     {
         "name": "iShares eb.rexx® Government Germany UCITS ETF (DE)",
@@ -5765,7 +6176,8 @@
         "fundSizeMillions": "288.30",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "1.06"
+        "distYield": "1.06",
+        "category": "Core Market"
     },
     {
         "name": "iShares S&P 500 Top 20 UCITS ETF",
@@ -5779,7 +6191,8 @@
         "fundSizeMillions": "284.24",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Essential Metals Producers UCITS ETF",
@@ -5793,7 +6206,8 @@
         "fundSizeMillions": "275.19",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI World Swap UCITS ETF",
@@ -5807,7 +6221,8 @@
         "fundSizeMillions": "272.05",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Diversified Commodity Swap UCITS ETF (DE)",
@@ -5821,7 +6236,8 @@
         "fundSizeMillions": "271.63",
         "fundSizeAsOf": "25.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI USA Islamic UCITS ETF",
@@ -5835,7 +6251,8 @@
         "fundSizeMillions": "270.99",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.78"
+        "distYield": "0.78",
+        "category": "Values"
     },
     {
         "name": "iShares STOXX Europe 600 Basic Resources UCITS ETF (DE)",
@@ -5849,7 +6266,8 @@
         "fundSizeMillions": "256.97",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.76"
+        "distYield": "2.76",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI Korea UCITS ETF USD (Acc)",
@@ -5863,7 +6281,8 @@
         "fundSizeMillions": "252.51",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Asia Property Yield UCITS ETF",
@@ -5877,7 +6296,8 @@
         "fundSizeMillions": "251.52",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.40"
+        "distYield": "3.40",
+        "category": "Thematic"
     },
     {
         "name": "iShares Global AAA-AA Govt Bond UCITS ETF",
@@ -5891,7 +6311,8 @@
         "fundSizeMillions": "245.94",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.29"
+        "distYield": "2.29",
+        "category": "Stability"
     },
     {
         "name": "iShares AI Adopters & Applications UCITS ETF",
@@ -5905,7 +6326,8 @@
         "fundSizeMillions": "241.40",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares $ Asia Investment Grade Corp Bond UCITS ETF",
@@ -5919,7 +6341,8 @@
         "fundSizeMillions": "236.17",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI EMU USD Hedged UCITS ETF (Acc)",
@@ -5933,7 +6356,8 @@
         "fundSizeMillions": "234.70",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares J.P. Morgan $ EM Bond CHF Hedged UCITS ETF (Dist)",
@@ -5947,7 +6371,8 @@
         "fundSizeMillions": "232.42",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.56"
+        "distYield": "5.56",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI Pacific ex-Japan UCITS ETF",
@@ -5961,7 +6386,8 @@
         "fundSizeMillions": "231.92",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.98"
+        "distYield": "2.98",
+        "category": "Core Market"
     },
     {
         "name": "iShares STOXX Europe 600 Telecommunications UCITS ETF (DE)",
@@ -5975,7 +6401,8 @@
         "fundSizeMillions": "222.97",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.53"
+        "distYield": "2.53",
+        "category": "Sectors"
     },
     {
         "name": "iShares STOXX Europe 600 Food & Beverage UCITS ETF (DE)",
@@ -5989,7 +6416,8 @@
         "fundSizeMillions": "218.25",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.50"
+        "distYield": "2.50",
+        "category": "Sectors"
     },
     {
         "name": "iShares Swiss Domestic Government Bond 0-3 ETF (CH)",
@@ -6003,7 +6431,8 @@
         "fundSizeMillions": "217.40",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Schweiz",
-        "distYield": "1.72"
+        "distYield": "1.72",
+        "category": "Stability"
     },
     {
         "name": "iShares Oil & Gas Exploration & Production UCITS ETF",
@@ -6017,7 +6446,8 @@
         "fundSizeMillions": "214.89",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI France UCITS ETF",
@@ -6031,7 +6461,8 @@
         "fundSizeMillions": "204.06",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares € Corp Bond Interest Rate Hedged ESG SRI UCITS ETF",
@@ -6045,7 +6476,8 @@
         "fundSizeMillions": "202.44",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.38"
+        "distYield": "3.38",
+        "category": "Values"
     },
     {
         "name": "iShares S&P 500 Materials Sector UCITS ETF",
@@ -6059,7 +6491,8 @@
         "fundSizeMillions": "199.28",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares STOXX Europe 600 Technology UCITS ETF (DE)",
@@ -6073,7 +6506,8 @@
         "fundSizeMillions": "199.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "0.56"
+        "distYield": "0.56",
+        "category": "Sectors"
     },
     {
         "name": "iShares STOXX Europe 600 Technology UCITS ETF (DE)",
@@ -6087,7 +6521,8 @@
         "fundSizeMillions": "199.08",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares $ Development Bank Bonds UCITS ETF",
@@ -6101,7 +6536,8 @@
         "fundSizeMillions": "191.49",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Development Bank Bonds UCITS ETF",
@@ -6115,7 +6551,8 @@
         "fundSizeMillions": "191.49",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Development Bank Bonds UCITS ETF",
@@ -6129,7 +6566,8 @@
         "fundSizeMillions": "191.49",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares STOXX Europe 600 Automobiles & Parts UCITS ETF (DE)",
@@ -6143,7 +6581,8 @@
         "fundSizeMillions": "189.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "4.69"
+        "distYield": "4.69",
+        "category": "Sectors"
     },
     {
         "name": "iShares STOXX Europe 600 Automobiles & Parts UCITS ETF (DE)",
@@ -6157,7 +6596,8 @@
         "fundSizeMillions": "189.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares Broad € High Yield Corp Bond UCITS ETF",
@@ -6171,7 +6611,8 @@
         "fundSizeMillions": "186.99",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.52"
+        "distYield": "5.52",
+        "category": "Stability"
     },
     {
         "name": "iShares Broad € High Yield Corp Bond UCITS ETF",
@@ -6185,7 +6626,8 @@
         "fundSizeMillions": "186.99",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Broad € High Yield Corp Bond UCITS ETF",
@@ -6199,7 +6641,8 @@
         "fundSizeMillions": "186.99",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Edge MSCI USA Minimum Volatility Advanced UCITS ETF",
@@ -6213,7 +6656,8 @@
         "fundSizeMillions": "185.82",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI Japan CHF Hedged UCITS ETF (Acc)",
@@ -6227,7 +6671,8 @@
         "fundSizeMillions": "184.22",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Dow Jones Eurozone Leaders Screened UCITS ETF (DE)",
@@ -6241,7 +6686,8 @@
         "fundSizeMillions": "183.98",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.50"
+        "distYield": "2.50",
+        "category": "Values"
     },
     {
         "name": "iShares $ Corp Bond Interest Rate Hedged UCITS ETF",
@@ -6255,7 +6701,8 @@
         "fundSizeMillions": "179.24",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.82"
+        "distYield": "4.82",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Corp Bond Interest Rate Hedged UCITS ETF",
@@ -6269,7 +6716,8 @@
         "fundSizeMillions": "179.24",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares AI Infrastructure UCITS ETF",
@@ -6283,7 +6731,8 @@
         "fundSizeMillions": "172.16",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares US Medical Devices UCITS ETF",
@@ -6297,7 +6746,8 @@
         "fundSizeMillions": "169.96",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI South Africa UCITS ETF",
@@ -6311,7 +6761,8 @@
         "fundSizeMillions": "168.48",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares BIC 50 UCITS ETF",
@@ -6325,7 +6776,8 @@
         "fundSizeMillions": "167.42",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.25"
+        "distYield": "2.25",
+        "category": "Core Market"
     },
     {
         "name": "iShares STOXX Europe 600 Personal & Household Goods UCITS ETF (DE)",
@@ -6339,7 +6791,8 @@
         "fundSizeMillions": "161.97",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.50"
+        "distYield": "2.50",
+        "category": "Sectors"
     },
     {
         "name": "iShares € Flexible Income Bond Active UCITS ETF",
@@ -6353,7 +6806,8 @@
         "fundSizeMillions": "161.32",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI Europe ex-UK GBP Hedged UCITS ETF (Dist)",
@@ -6367,7 +6821,8 @@
         "fundSizeMillions": "157.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.22"
+        "distYield": "2.22",
+        "category": "Core Market"
     },
     {
         "name": "iShares Global High Yield Corp Bond CHF Hedged UCITS ETF (Dist)",
@@ -6381,7 +6836,8 @@
         "fundSizeMillions": "154.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "5.47"
+        "distYield": "5.47",
+        "category": "Stability"
     },
     {
         "name": "iShares World Equity High Income Active UCITS ETF",
@@ -6395,7 +6851,8 @@
         "fundSizeMillions": "149.91",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares iBonds Dec 2031 Term € Corp UCITS ETF",
@@ -6409,7 +6866,8 @@
         "fundSizeMillions": "149.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2031 Term € Corp UCITS ETF",
@@ -6423,7 +6881,8 @@
         "fundSizeMillions": "149.38",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI EMU Large Cap UCITS ETF",
@@ -6437,7 +6896,8 @@
         "fundSizeMillions": "138.33",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI USA Value Factor Advanced UCITS ETF",
@@ -6451,7 +6911,8 @@
         "fundSizeMillions": "136.47",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Copper Miners UCITS ETF",
@@ -6465,7 +6926,8 @@
         "fundSizeMillions": "134.48",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI World Consumer Staples Sector Advanced UCITS ETF",
@@ -6479,7 +6941,8 @@
         "fundSizeMillions": "133.09",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.35"
+        "distYield": "2.35",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI UK Small Cap UCITS ETF",
@@ -6493,7 +6956,8 @@
         "fundSizeMillions": "131.94",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares STOXX Europe 50 UCITS ETF (DE)",
@@ -6507,7 +6971,8 @@
         "fundSizeMillions": "130.32",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.37"
+        "distYield": "2.37",
+        "category": "Core Market"
     },
     {
         "name": "iShares FTSE MIB UCITS ETF EUR (Dist)",
@@ -6521,7 +6986,8 @@
         "fundSizeMillions": "128.34",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.51"
+        "distYield": "3.51",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI EMU CHF Hedged UCITS ETF (Acc)",
@@ -6535,7 +7001,8 @@
         "fundSizeMillions": "127.97",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Metaverse UCITS ETF",
@@ -6549,7 +7016,8 @@
         "fundSizeMillions": "127.68",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares € Green Bond UCITS ETF",
@@ -6563,7 +7031,8 @@
         "fundSizeMillions": "127.03",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.73"
+        "distYield": "2.73",
+        "category": "Values"
     },
     {
         "name": "iShares DAX® ESG UCITS ETF (DE)",
@@ -6577,7 +7046,8 @@
         "fundSizeMillions": "121.92",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI Turkey UCITS ETF",
@@ -6591,7 +7061,8 @@
         "fundSizeMillions": "121.06",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.61"
+        "distYield": "1.61",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI ACWI SRI UCITS ETF",
@@ -6605,7 +7076,8 @@
         "fundSizeMillions": "117.44",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.31"
+        "distYield": "1.31",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World Quality Factor Advanced UCITS ETF",
@@ -6619,7 +7091,8 @@
         "fundSizeMillions": "112.78",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares iBonds Dec 2032 Term € Corp UCITS ETF",
@@ -6633,7 +7106,8 @@
         "fundSizeMillions": "107.53",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2032 Term € Corp UCITS ETF",
@@ -6647,7 +7121,8 @@
         "fundSizeMillions": "107.53",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares World Equity Factor Rotation Active UCITS ETF",
@@ -6661,7 +7136,8 @@
         "fundSizeMillions": "107.41",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI World Communication Services Sector Advanced UCITS ETF",
@@ -6675,7 +7151,8 @@
         "fundSizeMillions": "104.01",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.73"
+        "distYield": "0.73",
+        "category": "Sectors"
     },
     {
         "name": "iShares Global Timber & Forestry UCITS ETF",
@@ -6689,7 +7166,8 @@
         "fundSizeMillions": "103.81",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.67"
+        "distYield": "2.67",
+        "category": "Thematic"
     },
     {
         "name": "iShares iBonds Dec 2031 Term $ Corp UCITS ETF",
@@ -6703,7 +7181,8 @@
         "fundSizeMillions": "102.98",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2031 Term $ Corp UCITS ETF",
@@ -6717,7 +7196,8 @@
         "fundSizeMillions": "102.98",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI Pacific ex-Japan ESG Enhanced CTB UCITS ETF",
@@ -6731,7 +7211,8 @@
         "fundSizeMillions": "102.14",
         "fundSizeAsOf": "03.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI UK UCITS ETF",
@@ -6745,7 +7226,8 @@
         "fundSizeMillions": "102.09",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI Mexico Capped UCITS ETF",
@@ -6759,7 +7241,8 @@
         "fundSizeMillions": "95.16",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI Europe Paris-Aligned Climate UCITS ETF",
@@ -6773,7 +7256,8 @@
         "fundSizeMillions": "91.70",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares $ Sukuk UCITS ETF",
@@ -6787,7 +7271,8 @@
         "fundSizeMillions": "87.46",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "4.86"
+        "distYield": "4.86",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI World Industrials Sector Advanced UCITS ETF",
@@ -6801,7 +7286,8 @@
         "fundSizeMillions": "86.52",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.32"
+        "distYield": "1.32",
+        "category": "Sectors"
     },
     {
         "name": "iShares iBonds Dec 2034 Term € Corp UCITS ETF",
@@ -6815,7 +7301,8 @@
         "fundSizeMillions": "84.81",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2034 Term € Corp UCITS ETF",
@@ -6829,7 +7316,8 @@
         "fundSizeMillions": "84.81",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Europe Defence UCITS ETF",
@@ -6843,7 +7331,8 @@
         "fundSizeMillions": "79.06",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares iBonds Dec 2034 Term $ Corp UCITS ETF",
@@ -6857,7 +7346,8 @@
         "fundSizeMillions": "78.69",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2034 Term $ Corp UCITS ETF",
@@ -6871,7 +7361,8 @@
         "fundSizeMillions": "78.69",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares AI Innovation Active UCITS ETF",
@@ -6885,7 +7376,8 @@
         "fundSizeMillions": "76.87",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares STOXX Europe 600 Financial Services UCITS ETF (DE)",
@@ -6899,7 +7391,8 @@
         "fundSizeMillions": "76.30",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "1.67"
+        "distYield": "1.67",
+        "category": "Sectors"
     },
     {
         "name": "iShares Digital Entertainment and Education UCITS ETF",
@@ -6913,7 +7406,8 @@
         "fundSizeMillions": "71.95",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI World Energy Sector Advanced UCITS ETF",
@@ -6927,7 +7421,8 @@
         "fundSizeMillions": "71.85",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.15"
+        "distYield": "3.15",
+        "category": "Sectors"
     },
     {
         "name": "iShares STOXX USA Equity Multifactor UCITS ETF",
@@ -6941,7 +7436,8 @@
         "fundSizeMillions": "70.65",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares iBonds Dec 2032 Term $ Corp UCITS ETF",
@@ -6955,7 +7451,8 @@
         "fundSizeMillions": "67.60",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2032 Term $ Corp UCITS ETF",
@@ -6969,7 +7466,8 @@
         "fundSizeMillions": "67.60",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares STOXX Europe 600 Real Estate UCITS ETF (DE)",
@@ -6983,7 +7481,8 @@
         "fundSizeMillions": "67.30",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.11"
+        "distYield": "2.11",
+        "category": "Thematic"
     },
     {
         "name": "iShares iBonds Dec 2025 Term $ Treasury UCITS ETF",
@@ -6997,7 +7496,8 @@
         "fundSizeMillions": "65.69",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares EURO STOXX 50 ESG UCITS ETF",
@@ -7011,7 +7511,8 @@
         "fundSizeMillions": "64.11",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World Consumer Discretionary Sector Advanced UCITS ETF",
@@ -7025,7 +7526,8 @@
         "fundSizeMillions": "63.64",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "0.96"
+        "distYield": "0.96",
+        "category": "Sectors"
     },
     {
         "name": "iShares STOXX Europe 600 Travel & Leisure UCITS ETF (DE)",
@@ -7039,7 +7541,8 @@
         "fundSizeMillions": "62.74",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "3.95"
+        "distYield": "3.95",
+        "category": "Sectors"
     },
     {
         "name": "iShares STOXX Europe 600 Chemicals UCITS ETF (DE)",
@@ -7053,7 +7556,8 @@
         "fundSizeMillions": "62.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.19"
+        "distYield": "2.19",
+        "category": "Sectors"
     },
     {
         "name": "iShares € Corp Bond Enhanced Active UCITS ETF",
@@ -7067,7 +7571,8 @@
         "fundSizeMillions": "58.41",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI AC Far East ex-Japan Small Cap UCITS ETF",
@@ -7081,7 +7586,8 @@
         "fundSizeMillions": "58.40",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "2.15"
+        "distYield": "2.15",
+        "category": "Core Market"
     },
     {
         "name": "iShares Emerging Asia Local Govt Bond UCITS ETF",
@@ -7095,7 +7601,8 @@
         "fundSizeMillions": "56.63",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.23"
+        "distYield": "3.23",
+        "category": "Stability"
     },
     {
         "name": "iShares MSCI EM Consumer Growth UCITS ETF",
@@ -7109,7 +7616,8 @@
         "fundSizeMillions": "55.11",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares iBonds Dec 2027 Term $ Treasury UCITS ETF",
@@ -7123,7 +7631,8 @@
         "fundSizeMillions": "54.86",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.96"
+        "distYield": "3.96",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2033 Term € Corp UCITS ETF",
@@ -7137,7 +7646,8 @@
         "fundSizeMillions": "54.82",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2033 Term € Corp UCITS ETF",
@@ -7151,7 +7661,8 @@
         "fundSizeMillions": "54.82",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares $ Corp Bond Enhanced Active UCITS ETF",
@@ -7165,7 +7676,8 @@
         "fundSizeMillions": "53.14",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2033 Term $ Corp UCITS ETF",
@@ -7179,7 +7691,8 @@
         "fundSizeMillions": "42.90",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares iBonds Dec 2033 Term $ Corp UCITS ETF",
@@ -7193,7 +7706,8 @@
         "fundSizeMillions": "42.90",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Stability"
     },
     {
         "name": "iShares Asia ex Japan Equity Enhanced Active UCITS ETF",
@@ -7207,7 +7721,8 @@
         "fundSizeMillions": "40.53",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Edge MSCI Europe Minimum Volatility Advanced UCITS ETF",
@@ -7221,7 +7736,8 @@
         "fundSizeMillions": "36.62",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares Russell 2000 Swap UCITS ETF",
@@ -7235,7 +7751,8 @@
         "fundSizeMillions": "35.11",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares U.S. Equity High Income Active UCITS ETF",
@@ -7249,7 +7766,8 @@
         "fundSizeMillions": "34.17",
         "fundSizeAsOf": "03.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI Europe Mid-Cap Equal Weight UCITS ETF",
@@ -7263,7 +7781,8 @@
         "fundSizeMillions": "29.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Strategy"
     },
     {
         "name": "iShares MSCI World Materials Sector Advanced UCITS ETF",
@@ -7277,7 +7796,8 @@
         "fundSizeMillions": "24.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "1.80"
+        "distYield": "1.80",
+        "category": "Sectors"
     },
     {
         "name": "iShares $ UltraShort Bond ESG SRI UCITS ETF",
@@ -7291,7 +7811,8 @@
         "fundSizeMillions": "21.44",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares iBonds Dec 2029 Term $ Treasury UCITS ETF",
@@ -7305,7 +7826,8 @@
         "fundSizeMillions": "19.69",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "3.94"
+        "distYield": "3.94",
+        "category": "Stability"
     },
     {
         "name": "iShares Lithium & Battery Producers UCITS ETF",
@@ -7319,7 +7841,8 @@
         "fundSizeMillions": "16.22",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI Japan Climate Transition Aware UCITS ETF",
@@ -7333,7 +7856,8 @@
         "fundSizeMillions": "12.28",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares STOXX Europe 600 Media UCITS ETF (DE)",
@@ -7347,7 +7871,8 @@
         "fundSizeMillions": "10.94",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.92"
+        "distYield": "2.92",
+        "category": "Sectors"
     },
     {
         "name": "iShares STOXX Europe 600 Retail UCITS ETF (DE)",
@@ -7361,7 +7886,8 @@
         "fundSizeMillions": "10.70",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Deutschland",
-        "distYield": "2.60"
+        "distYield": "2.60",
+        "category": "Sectors"
     },
     {
         "name": "iShares Energy Storage & Hydrogen UCITS ETF",
@@ -7375,7 +7901,8 @@
         "fundSizeMillions": "9.68",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Thematic"
     },
     {
         "name": "iShares MSCI World Climate Transition Aware UCITS ETF",
@@ -7389,7 +7916,8 @@
         "fundSizeMillions": "9.23",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares Nasdaq 100 Top 30 UCITS ETF",
@@ -7403,7 +7931,8 @@
         "fundSizeMillions": "9.15",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares Nasdaq 100 ex-Top 30 UCITS ETF",
@@ -7417,7 +7946,8 @@
         "fundSizeMillions": "8.71",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Core Market"
     },
     {
         "name": "iShares MSCI Global Telecommunication Services UCITS ETF",
@@ -7431,7 +7961,8 @@
         "fundSizeMillions": "6.92",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI USA Climate Transition Aware UCITS ETF",
@@ -7445,7 +7976,8 @@
         "fundSizeMillions": "6.52",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI Europe Climate Transition Aware UCITS ETF",
@@ -7459,7 +7991,8 @@
         "fundSizeMillions": "6.24",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     },
     {
         "name": "iShares MSCI World Utilities Sector Advanced UCITS ETF",
@@ -7473,7 +8006,8 @@
         "fundSizeMillions": "5.37",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Sectors"
     },
     {
         "name": "iShares MSCI EMU Climate Transition Aware UCITS ETF",
@@ -7487,6 +8021,7 @@
         "fundSizeMillions": "2.27",
         "fundSizeAsOf": "26.Sept.2025",
         "domicile": "Irland",
-        "distYield": "-"
+        "distYield": "-",
+        "category": "Values"
     }
 ]

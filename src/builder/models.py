@@ -15,6 +15,7 @@ class ETFInfo(BaseModel):
     domicile: str = ""
     dist_yield: Optional[float] = None
     total_holdings: Optional[int] = None
+    category: Optional[str] = None
 
 
 class CountryDistribution(BaseModel):

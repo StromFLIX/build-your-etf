@@ -53,7 +53,8 @@ async def root():
             "/etfs/{etf_id}": "Get specific ETF details",
             "/optimize": "Optimize ETF portfolio based on desired allocations",
             "/countries": "Get list of all available countries",
-            "/industries": "Get list of all available industries"
+            "/industries": "Get list of all available industries",
+            "/categories": "Get list of all available ETF categories"
         }
     }
 
@@ -66,13 +67,22 @@ async def list_etfs(
     offset: int = Query(default=0, ge=0, description="Offset for pagination"),
     min_fund_size: float = Query(default=None, description="Minimum fund size in millions"),
     max_ter: float = Query(default=None, description="Maximum TER (e.g., 1.0 for 1%)"),
-    currency: str = Query(default=None, description="Filter by currency (USD, EUR, GBP, etc.)")
+    currency: str = Query(default=None, description="Filter by currency (USD, EUR, GBP, etc.)"),
+    category: str = Query(default=None, description="Filter by category (Core Market, Sectors, Thematic, Strategy, Stability, Values)")
 ):
     """
     Get list of available ETFs with their country and industry distributions.
     
     This endpoint provides a rich list of ETFs that can be filtered and sorted
-    by various criteria including TER, fund size, and currency.
+    by various criteria including TER, fund size, currency, and category.
+    
+    Categories:
+    - Core Market: Broad market indices (S&P 500, MSCI World, etc.)
+    - Sectors: Sector-specific ETFs (Technology, Healthcare, etc.)
+    - Thematic: Innovation and theme-based ETFs (AI, Clean Energy, etc.)
+    - Strategy: Factor-based and strategic ETFs (Dividend, Value, etc.)
+    - Stability: Fixed income ETFs (Bonds, Treasuries, etc.)
+    - Values: ESG and sustainable investing ETFs
     """
     try:
         etfs = await db.get_etfs(
@@ -82,7 +92,8 @@ async def list_etfs(
             offset=offset,
             min_fund_size=min_fund_size,
             max_ter=max_ter,
-            currency=currency
+            currency=currency,
+            category=category
         )
         return etfs
     except Exception as e:
@@ -121,10 +132,19 @@ async def optimize_portfolio(request: OptimizationRequest):
             "max_etfs": 5,
             "max_ter": 1.0,
             "min_fund_size": 500,
-            "excluded_etfs": []
+            "excluded_etfs": [],
+            "categories": ["Core Market", "Sectors"]
         }
     }
     ```
+    
+    Config options:
+    - max_etfs: Maximum number of ETFs in portfolio (default: 10)
+    - max_ter: Maximum TER allowed (default: 2.0)
+    - min_fund_size: Minimum fund size in millions (default: 100)
+    - excluded_etfs: List of ETF IDs or tickers to exclude
+    - categories: List of categories to include (e.g., ["Core Market", "Thematic"])
+                 Available: Core Market, Sectors, Thematic, Strategy, Stability, Values
     
     Note: Unallocated percentages are automatically calculated:
     - Countries: Remaining percentage becomes "Unallocated" 
@@ -174,6 +194,26 @@ async def list_industries():
         return sorted(industries)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving industries: {str(e)}")
+
+
+@app.get("/categories", response_model=List[str])
+async def list_categories():
+    """
+    Get list of all available ETF categories.
+    
+    Categories help organize ETFs by their investment focus:
+    - Core Market: Broad market indices
+    - Sectors: Sector-specific investments
+    - Thematic: Innovation and theme-based
+    - Strategy: Factor-based and strategic approaches
+    - Stability: Fixed income and bonds
+    - Values: ESG and sustainable investing
+    """
+    try:
+        categories = await db.get_all_categories()
+        return categories
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error retrieving categories: {str(e)}")
 
 
 @app.get("/health")

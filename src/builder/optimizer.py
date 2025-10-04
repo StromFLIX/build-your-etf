@@ -241,6 +241,7 @@ class ETFOptimizer:
         max_ter = config.get('max_ter', 2.0)
         excluded_etfs = set(config.get('excluded_etfs', []))
         min_fund_size = config.get('min_fund_size', 100)  # 100M minimum
+        categories = config.get('categories', None)  # Optional list of categories to include
         
         # Get a good pool of ETFs with relaxed fund size for diversity
         all_etfs = await self.db.get_etfs(
@@ -252,6 +253,10 @@ class ETFOptimizer:
         # Filter out excluded ETFs and ensure we have distributions
         filtered_etfs = []
         for etf in all_etfs:
+            # Check category filter if specified
+            if categories and etf.category and etf.category not in categories:
+                continue
+                
             if (etf.id not in excluded_etfs and 
                 etf.ticker not in excluded_etfs and
                 (etf.country_distributions or etf.industry_distributions)):

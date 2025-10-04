@@ -69,6 +69,7 @@ class ETFDatabase:
                     'fund_size_millions': fund_size_millions,
                     'domicile': etf.get('domicile', ''),
                     'dist_yield': dist_yield,
+                    'category': etf.get('category'),
                 }
                 
         return self._etf_metadata_cache
@@ -81,7 +82,8 @@ class ETFDatabase:
         offset: int = 0,
         min_fund_size: Optional[float] = None,
         max_ter: Optional[float] = None,
-        currency: Optional[str] = None
+        currency: Optional[str] = None,
+        category: Optional[str] = None
     ) -> List[ETFWithDistributions]:
         """Get list of ETFs with filtering and sorting."""
         etf_metadata = await self._load_etf_metadata()
@@ -117,6 +119,7 @@ class ETFDatabase:
                         'fund_size_millions': None,
                         'domicile': '',
                         'dist_yield': None,
+                        'category': None,
                     }
                 
                 # Apply filters
@@ -125,6 +128,8 @@ class ETFDatabase:
                 if max_ter and metadata['ter'] > max_ter:
                     continue
                 if currency and metadata['currency'].upper() != currency.upper():
+                    continue
+                if category and metadata.get('category') != category:
                     continue
                 
                 # Get distributions
@@ -141,6 +146,7 @@ class ETFDatabase:
                     domicile=metadata['domicile'] or '',
                     dist_yield=metadata['dist_yield'],
                     total_holdings=total_holdings,
+                    category=metadata.get('category'),
                     country_distributions=country_dists,
                     industry_distributions=industry_dists
                 )
@@ -271,3 +277,12 @@ class ETFDatabase:
             cursor = await db.execute("SELECT DISTINCT industry FROM industry_distributions ORDER BY industry")
             rows = await cursor.fetchall()
             return [row[0] for row in rows]
+
+    async def get_all_categories(self) -> List[str]:
+        """Get all unique categories from the ETF metadata."""
+        etf_metadata = await self._load_etf_metadata()
+        categories = set()
+        for metadata in etf_metadata.values():
+            if metadata.get('category'):
+                categories.add(metadata['category'])
+        return sorted(list(categories))

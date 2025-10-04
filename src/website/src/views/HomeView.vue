@@ -3,7 +3,17 @@ import HexWorldMap from '@/components/HexWorldMapOptimized.vue'
 import IndustryPieChart from '@/components/IndustryPieChart.vue'
 import ETFAllocationTable from '@/components/ETFAllocationTable.vue'
 import { ref, reactive, computed, onMounted, onUnmounted } from 'vue'
-import { optimizePortfolio, getDefaultMSCIWorldData, getDefaultETFAllocation, getAvailableCountries, getAvailableIndustries } from '@/services/etfService'
+import { optimizePortfolio, getDefaultMSCIWorldData, getDefaultETFAllocation, getAvailableCountries, getAvailableIndustries, getAvailableCategories } from '@/services/etfService'
+
+// Category definitions with descriptions
+const CATEGORY_INFO = {
+  'Core Market': 'Broad market indices like S&P 500, MSCI World, and country/regional ETFs providing diversified global exposure',
+  'Sectors': 'Industry-specific ETFs focused on sectors like Technology, Healthcare, Financials, Energy, and more',
+  'Thematic': 'Innovation and trend-focused ETFs covering AI, Clean Energy, Electric Vehicles, Commodities, and emerging themes',
+  'Strategy': 'Factor-based ETFs using systematic strategies like Dividend, Quality, Value, Momentum, and Equal Weight',
+  'Stability': 'Fixed income ETFs including Government Bonds, Corporate Bonds, Treasuries, and other debt instruments',
+  'Values': 'ESG and sustainable investing ETFs aligned with environmental, social, and governance principles'
+}
 
 // State
 const allocations = reactive({
@@ -28,6 +38,17 @@ const currentIndustryData = ref<Record<string, number>>(defaultData.industries)
 
 const availableCountries = ref<string[]>([])
 const availableIndustries = ref<string[]>([])
+const availableCategories = ref<string[]>([])
+const selectedCategories = ref<Set<string>>(new Set(['Core Market', 'Sectors', 'Thematic']))
+const showCategoryInfo = ref<string | null>(null)
+
+// Close tooltip when clicking outside
+function handleClickOutside(event: MouseEvent) {
+  const target = event.target as HTMLElement
+  if (!target.closest('.category-pill-container')) {
+    showCategoryInfo.value = null
+  }
+}
 
 // Arrow opacity - fades when scrolling
 const arrowOpacity = computed(() => {
@@ -145,6 +166,7 @@ function handleResize() {
 onMounted(async () => {
   window.addEventListener('scroll', handleScroll)
   window.addEventListener('resize', handleResize)
+  window.addEventListener('click', handleClickOutside)
   windowHeight.value = window.innerHeight
   
   // Ensure page starts at the top on load/reload
@@ -153,12 +175,14 @@ onMounted(async () => {
   
   // Load available options
   try {
-    const [countries, industries] = await Promise.all([
+    const [countries, industries, categories] = await Promise.all([
       getAvailableCountries(),
-      getAvailableIndustries()
+      getAvailableIndustries(),
+      getAvailableCategories()
     ])
     availableCountries.value = countries
     availableIndustries.value = industries
+    availableCategories.value = categories
   } catch (error) {
     console.error('Failed to load available options:', error)
   }
@@ -189,6 +213,7 @@ onMounted(async () => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
   window.removeEventListener('resize', handleResize)
+  window.removeEventListener('click', handleClickOutside)
 })
 
 async function optimizeAndUpdate() {
@@ -208,7 +233,14 @@ async function optimizeAndUpdate() {
       selectedIndustryAllocations[industry] = allocations.industries[industry] || 0
     })
     
-    const result = await optimizePortfolio(selectedCountryAllocations, selectedIndustryAllocations)
+    // Convert selected categories Set to Array
+    const categoryFilters = Array.from(selectedCategories.value)
+    
+    const result = await optimizePortfolio(
+      selectedCountryAllocations, 
+      selectedIndustryAllocations,
+      categoryFilters.length > 0 ? categoryFilters : undefined
+    )
     portfolioResult.value = result
     
     // Update current data with achieved allocations
@@ -294,10 +326,23 @@ function resetToMSCI() {
     allocations.industries[name] = (defaultData.industries as Record<string, number>)[name]
   })
   
+  // Reset categories to default
+  selectedCategories.value = new Set(['Core Market', 'Sectors', 'Thematic'])
+  
   portfolioResult.value = null
   etfAllocations.value = getDefaultETFAllocation()
   
   window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+function toggleCategory(category: string) {
+  if (selectedCategories.value.has(category)) {
+    selectedCategories.value.delete(category)
+  } else {
+    selectedCategories.value.add(category)
+  }
+  // Force reactivity
+  selectedCategories.value = new Set(selectedCategories.value)
 }
 </script>
 
@@ -423,6 +468,61 @@ function resetToMSCI() {
           >
             Reset
           </button>
+        </div>
+
+        <!-- Category Pills -->
+        <div class="mb-8">
+          <h3 class="text-sm font-medium text-gray-400 mb-3">ETF Categories</h3>
+          <div class="flex flex-wrap gap-2">
+            <div 
+              v-for="category in availableCategories" 
+              :key="category"
+              class="relative group category-pill-container"
+            >
+              <button
+                @click="toggleCategory(category)"
+                :class="[
+                  'px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 flex items-center gap-2',
+                  selectedCategories.has(category)
+                    ? 'bg-white text-black'
+                    : 'bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white'
+                ]"
+              >
+                <span>{{ category }}</span>
+                <button
+                  @click.stop="showCategoryInfo = showCategoryInfo === category ? null : category"
+                  :class="[
+                    'w-4 h-4 rounded-full flex items-center justify-center text-xs transition-colors',
+                    selectedCategories.has(category)
+                      ? 'bg-black text-white'
+                      : 'bg-gray-700 text-gray-400 group-hover:bg-gray-600'
+                  ]"
+                  title="Info"
+                >
+                  i
+                </button>
+              </button>
+              
+              <!-- Info tooltip -->
+              <div
+                v-if="showCategoryInfo === category"
+                class="absolute z-20 top-full mt-2 left-0 w-72 bg-gray-900 border border-gray-700 rounded-lg p-3 text-xs text-gray-300 shadow-xl"
+              >
+                <button
+                  @click.stop="showCategoryInfo = null"
+                  class="absolute top-2 right-2 text-gray-500 hover:text-white"
+                >
+                  ✕
+                </button>
+                <div class="pr-6">
+                  {{ CATEGORY_INFO[category as keyof typeof CATEGORY_INFO] }}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-xs text-gray-500 mt-2">
+            {{ selectedCategories.size }} {{ selectedCategories.size === 1 ? 'category' : 'categories' }} selected
+          </div>
         </div>
 
         <!-- Split Controls -->
