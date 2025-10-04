@@ -38,7 +38,7 @@ function updateColors() {
 
 <template>
   <div class="relative w-full h-full flex items-center justify-center">
-    <!-- SVG Container with rounded borders and fade effect -->
+    <!-- SVG Container with rounded borders -->
     <div class="relative w-full h-full max-w-full max-h-full rounded-2xl overflow-hidden bg-black flex items-center justify-center">
       <svg 
         ref="svgRef" 
@@ -48,12 +48,6 @@ function updateColors() {
       >
         <!-- Precomputed hex world map SVG will be loaded here -->
       </svg>
-      
-      <!-- Subtle fade-out gradient overlay -->
-      <div class="absolute inset-0 pointer-events-none">
-        <!-- Gentle radial fade to focus on center content -->
-        <div class="absolute inset-0 hex-map-fade"></div>
-      </div>
     </div>
   </div>
 </template>
@@ -65,17 +59,5 @@ svg {
 
 :deep(.hex) {
   transition: fill 0.3s ease;
-}
-
-/* Elegant radial fade effect */
-.hex-map-fade {
-  background: radial-gradient(
-    ellipse 80% 60% at center, 
-    transparent 30%, 
-    rgba(0,0,0,0.1) 60%, 
-    rgba(0,0,0,0.4) 80%, 
-    rgba(0,0,0,0.8) 95%, 
-    black 100%
-  );
 }
 </style>
