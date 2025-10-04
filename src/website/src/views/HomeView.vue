@@ -87,6 +87,22 @@ const topIndustries = computed(() => {
 const canAddMoreCountries = computed(() => selectedCountries.value.length < MAX_DISPLAYED_ITEMS)
 const canAddMoreIndustries = computed(() => selectedIndustries.value.length < MAX_DISPLAYED_ITEMS)
 
+// Top countries for map legend (sorted by percentage, top 3)
+const topCountriesForLegend = computed(() => {
+  return Object.entries(currentCountryData.value)
+    .map(([name, weight]) => ({ name, weight }))
+    .filter(d => d.weight > 0)
+    .sort((a, b) => b.weight - a.weight)
+    .slice(0, 3)
+})
+
+// Get opacity for country based on weight
+function getCountryOpacity(weight: number): number {
+  const maxWeight = Math.max(...Object.values(currentCountryData.value))
+  const intensity = weight / maxWeight
+  return Math.max(0.3 + intensity * 0.7, 0.3)
+}
+
 // Filtered countries for search
 const filteredCountries = computed(() => {
   if (!countrySearch.value) return []
@@ -115,7 +131,7 @@ function handleScroll() {
   const currentScroll = window.scrollY
   
   // Lock position is roughly when map reaches the top (after ~66% of viewport height)
-  const lockPosition = windowHeight.value * 0.64
+  const lockPosition = windowHeight.value * 0.60
   
   // Once we pass the lock position, prevent scrolling back up
   if (currentScroll >= lockPosition && !scrollLocked.value) {
@@ -347,9 +363,26 @@ function resetToMSCI() {
       </div>
 
       <!-- Middle 1/3 - Country Allocation Map (Sticky in center) -->
-      <div class="flex-1 px-6 flex items-center justify-center sticky top-1/3">
-        <div class="w-full max-w-6xl h-full flex items-center">
+      <div class="flex-1 px-6 flex flex-col items-center justify-center sticky top-1/3 gap-3">
+        <div class="w-full max-w-6xl flex-1 flex items-center">
           <HexWorldMap :countryData="currentCountryData" class="w-full h-full" />
+        </div>
+        
+        <!-- Legend below map -->
+        <div class="w-full max-w-6xl">
+          <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400 justify-center">
+            <div
+              v-for="country in topCountriesForLegend"
+              :key="country.name"
+              class="flex items-center gap-1.5"
+            >
+              <div 
+                class="w-3 h-3 rounded-sm"
+                :style="{ backgroundColor: `rgba(255, 255, 255, ${getCountryOpacity(country.weight)})` }"
+              ></div>
+              <span>{{ country.name }} <span class="text-gray-500">({{ country.weight.toFixed(1) }}%)</span></span>
+            </div>
+          </div>
         </div>
       </div>
 
