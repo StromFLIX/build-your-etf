@@ -265,13 +265,19 @@ function resetToMSCI() {
       
       <!-- Top 1/3 - Centered Text -->
       <div class="flex-1 flex items-center justify-center px-6">
-        <div class="text-center space-y-6 max-w-lg">
-          <h1 class="text-4xl md:text-6xl font-light leading-tight">
-            Build <span class="border-b-4 border-white">Your</span> ETF
-          </h1>
-          <p class="text-lg md:text-xl text-gray-300">
-            Because the world is biased.
-          </p>
+        <div class="flex items-center gap-6 max-w-4xl">
+          <!-- Logo -->
+          <img 
+            src="/logo-cropped.png" 
+            alt="Build your ETF Logo" 
+            class="w-24 h-24 md:w-24 md:h-24 object-contain"
+          />
+          <!-- Text -->
+          <div class="space-y-4">
+            <h1 class="text-4xl md:text-6xl font-light leading-tight">
+              Build <span class="border-b-4 border-white">Your</span> ETF
+            </h1>
+          </div>
         </div>
       </div>
 
