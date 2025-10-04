@@ -99,7 +99,7 @@ const topCountries = computed(() => {
   return selectedCountries.value.map(name => ({
     name,
     current: currentCountryData.value[name] || 0,
-    allocated: allocations.countries[name] || currentCountryData.value[name] || 0
+    allocated: allocations.countries[name] !== undefined ? allocations.countries[name] : (currentCountryData.value[name] || 0)
   }))
 })
 
@@ -107,7 +107,7 @@ const topIndustries = computed(() => {
   return selectedIndustries.value.map(name => ({
     name,
     current: currentIndustryData.value[name] || 0,
-    allocated: allocations.industries[name] || currentIndustryData.value[name] || 0
+    allocated: allocations.industries[name] !== undefined ? allocations.industries[name] : (currentIndustryData.value[name] || 0)
   }))
 })
 
