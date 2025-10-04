@@ -48,6 +48,13 @@ const dividerOpacity = computed(() => {
   return Math.min(1, scrollY.value / 200)
 })
 
+// Labels opacity - fades in gradually until lock position
+const labelsOpacity = computed(() => {
+  const lockPosition = windowHeight.value * 0.60
+  if (lockPosition === 0) return 0
+  return Math.min(1, scrollY.value / lockPosition)
+})
+
 // Computed values
 const unallocatedCountries = computed(() => {
   const allocated = Object.values(allocations.countries).reduce((sum, val) => sum + val, 0)
@@ -369,7 +376,7 @@ function resetToMSCI() {
         </div>
         
         <!-- Legend below map -->
-        <div class="w-full max-w-6xl">
+        <div class="w-full max-w-6xl transition-opacity duration-300" :style="{ opacity: labelsOpacity }">
           <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400 justify-center">
             <div
               v-for="country in topCountriesForLegend"
@@ -410,7 +417,7 @@ function resetToMSCI() {
         <!-- Industry Bar Chart -->
         <div class="space-y-4">
           <div class="bg-black" style="height: 120px;">
-            <IndustryPieChart :industryData="currentIndustryData" />
+            <IndustryPieChart :industryData="currentIndustryData" :labelsOpacity="labelsOpacity" />
           </div>
         </div>
       </div>

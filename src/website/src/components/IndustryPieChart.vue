@@ -3,15 +3,48 @@ import { computed } from 'vue'
 
 interface Props {
   industryData: Record<string, number>
+  labelsOpacity?: number
 }
 
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  labelsOpacity: 1
+})
 
 const processedData = computed(() => {
   return Object.entries(props.industryData)
     .map(([industry, weight]) => ({ industry, weight }))
     .filter(d => d.weight > 0)
     .sort((a, b) => b.weight - a.weight)
+})
+
+// Top industries to display (8)
+const topIndustries = computed(() => {
+  return processedData.value.slice(0, 8)
+})
+
+// Calculate "Rest" percentage
+const restPercentage = computed(() => {
+  const topTotal = topIndustries.value.reduce((sum, item) => sum + item.weight, 0)
+  const total = processedData.value.reduce((sum, item) => sum + item.weight, 0)
+  return Math.max(0, total - topTotal)
+})
+
+// Data for bar chart (top 8 + rest)
+const barChartData = computed(() => {
+  const data = [...topIndustries.value]
+  if (restPercentage.value > 0) {
+    data.push({ industry: 'Rest', weight: restPercentage.value })
+  }
+  return data
+})
+
+// Data for legend (top 8 + rest if exists)
+const legendData = computed(() => {
+  const data = [...topIndustries.value]
+  if (restPercentage.value > 0) {
+    data.push({ industry: 'Rest', weight: restPercentage.value })
+  }
+  return data
 })
 
 const maxWeight = computed(() => {
@@ -26,17 +59,18 @@ function getOpacity(weight: number): number {
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-col items-center justify-center p-4 gap-6">
+  <div class="w-full h-full flex flex-col items-center justify-center p-4 gap-6 ">
     <div class="w-full max-w-6xl space-y-3">
       <!-- Horizontal bar chart -->
-      <div class="flex h-12 overflow-hidden relative">
+      <div class="flex h-12 overflow-hidden relative border  rounded-lg">
         <div
-          v-for="item in processedData"
+          v-for="item in barChartData"
           :key="item.industry"
           :style="{ 
             width: `${item.weight}%`,
-            backgroundColor: `rgba(255, 255, 255, ${getOpacity(item.weight)})`
+            backgroundColor: item.industry === 'Rest' ? 'transparent' : `rgba(255, 255, 255, ${getOpacity(item.weight)})`
           }"
+          :class="item.industry === 'Rest' ? 'diagonal-stripes' : ''"
           class="relative group transition-all duration-200 hover:brightness-110 cursor-pointer"
         >
           <!-- Tooltip on hover -->
@@ -51,14 +85,19 @@ function getOpacity(weight: number): number {
         </div>
       </div>
       
-      <!-- Legend below - showing top industries -->
-      <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400 justify-center">
+      <!-- Legend below - showing top industries + rest -->
+      <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-400 justify-center transition-opacity duration-300" :style="{ opacity: props.labelsOpacity }">
         <div
-          v-for="(item, index) in processedData.slice(0, 8)"
+          v-for="item in legendData"
           :key="item.industry"
           class="flex items-center gap-1.5"
         >
           <div 
+            v-if="item.industry === 'Rest'"
+            class="w-3 h-3 rounded-sm diagonal-stripes-legend"
+          ></div>
+          <div 
+            v-else
             class="w-3 h-3 rounded-sm"
             :style="{ backgroundColor: `rgba(255, 255, 255, ${getOpacity(item.weight)})` }"
           ></div>
@@ -70,4 +109,25 @@ function getOpacity(weight: number): number {
 </template>
 
 <style scoped>
+/* Diagonal stripes for "Rest" bar */
+.diagonal-stripes {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3) 4px,
+    rgba(255, 255, 255, 0.1) 4px,
+    rgba(255, 255, 255, 0.1) 8px
+  );
+}
+
+/* Diagonal stripes for legend square */
+.diagonal-stripes-legend {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5) 2px,
+    rgba(255, 255, 255, 0.2) 2px,
+    rgba(255, 255, 255, 0.2) 4px
+  );
+}
 </style>
