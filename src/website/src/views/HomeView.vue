@@ -33,6 +33,10 @@ const windowHeight = ref(0)
 const heroSectionRef = ref<HTMLElement>()
 const mapSectionRef = ref<HTMLElement>()
 
+// Story sequence state
+const storyStage = ref(0) // 0 = bias, 1 = balance, 2 = action
+const hasScrolled = ref(false)
+
 // Default MSCI World for initial display
 const defaultData = getDefaultMSCIWorldData()
 const currentCountryData = ref<Record<string, number>>(defaultData.countries)
@@ -193,6 +197,9 @@ const filteredIndustries = computed(() => {
 // Scroll handler
 function handleScroll() {
   scrollY.value = window.scrollY
+  if (window.scrollY > 50 && !hasScrolled.value) {
+    hasScrolled.value = true
+  }
 }
 
 function handleResize() {
@@ -208,6 +215,10 @@ onMounted(async () => {
   // Ensure page starts at the top on load/reload
   window.scrollTo(0, 0)
   scrollY.value = 0
+  
+  // Start story sequence - slower timing
+  setTimeout(() => { storyStage.value = 1 }, 3500) // Stage 1 → 2 after 3.5s
+  setTimeout(() => { storyStage.value = 2 }, 7000) // Stage 2 → 3 after 7s
   
   // Load available options
   try {
@@ -436,32 +447,69 @@ function toggleCategory(category: string) {
       </div>
     </div>
     
-    <!-- Hero Section - Simple 3-part layout -->
+    <!-- Hero Section - 3-part layout with Story Sequence -->
     <div ref="heroSectionRef" class="h-screen flex flex-col relative">
       
-      <!-- Top 1/3 - Centered Text -->
-      <div class="flex-1 flex items-center justify-center px-6">
-        <div class="flex items-center gap-6 max-w-4xl">
-          <!-- Logo -->
-          <img 
-            src="/logo-cropped.png" 
-            alt="Build your ETF Logo" 
-            class="w-24 h-24 md:w-24 md:h-24 object-contain"
-          />
-          <!-- Text -->
-          <div class="space-y-4">
-            <h1 class="text-4xl md:text-6xl font-light leading-tight">
-              Build <span class="border-b-4 border-white">Your</span> ETF
-            </h1>
+      <!-- Top 1/3 - Story Sequence Text -->
+      <div class="flex-1 flex items-center justify-center px-6 relative">
+        <!-- Stage 1: Bias Visualization (0-2s) -->
+        <div 
+          class="absolute inset-0 flex items-center justify-center transition-opacity duration-1000"
+          :style="{ opacity: hasScrolled ? 0 : (storyStage === 0 ? 1 : 0) }"
+        >
+          <div class="text-center space-y-4 px-6 max-w-3xl">
+            <h2 class="text-3xl md:text-5xl font-light">
+              Most ETFs are heavily biased…
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-400">
+              ...towards just a few countries and industries.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stage 2: Call for Balance (2-4s) -->
+        <div 
+          class="absolute inset-0 flex items-center justify-center transition-opacity duration-1000"
+          :style="{ opacity: hasScrolled ? 0 : (storyStage === 1 ? 1 : 0) }"
+        >
+          <div class="text-center space-y-4 px-6 max-w-3xl">
+            <h2 class="text-3xl md:text-5xl font-light">
+              But what if you could rebalance the world yourself?
+            </h2>
+          </div>
+        </div>
+
+        <!-- Stage 3: Logo and Title (4-6s) -->
+        <div 
+          class="absolute inset-0 flex items-center justify-center transition-opacity duration-1000"
+          :style="{ opacity: hasScrolled ? 0 : (storyStage === 2 ? 1 : 0) }"
+        >
+          <div class="flex items-center gap-6 max-w-4xl">
+            <!-- Logo -->
+            <img 
+              src="/logo-cropped.png" 
+              alt="Build your ETF Logo" 
+              class="w-20 h-20 md:w-24 md:h-24 object-contain"
+            />
+            <!-- Text -->
+            <div class="space-y-4">
+              <h1 class="text-4xl md:text-6xl font-light leading-tight">
+                Build <span class="border-b-4 border-white">Your</span> ETF
+              </h1>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Middle 1/3 - Country Allocation Map (Sticky in center) -->
+      <!-- Middle 1/3 - Map (Sticky) with Highlight Effects -->
       <div ref="mapSectionRef" class="flex-1 px-6 flex flex-col items-center justify-center sticky top-1/3 md:top-1/4 gap-3 scroll-mt-20">
-        <div class="w-full max-w-6xl flex-1 flex items-center justify-center">
+        <div class="w-full max-w-6xl flex-1 flex items-center justify-center relative">
           <div class="w-full h-full max-h-[500px] flex items-center justify-center">
-            <HexWorldMap :countryData="currentCountryData" class="w-full h-full" />
+            <HexWorldMap 
+              :countryData="currentCountryData" 
+              :highlightStage="hasScrolled ? null : storyStage"
+              class="w-full h-full" 
+            />
           </div>
         </div>
         
@@ -483,13 +531,15 @@ function toggleCategory(category: string) {
         </div>
       </div>
 
-      <!-- Bottom 1/3 - Pulsing Arrow -->
+      <!-- Bottom 1/3 - Scroll Prompt (only visible during Stage 3) -->
       <div 
-        class="flex-1 flex items-center justify-center transition-opacity duration-300"
-        :style="{ opacity: arrowOpacity }"
+        class="flex-1 flex items-center justify-center transition-opacity duration-1000"
+        :style="{ opacity: hasScrolled ? 0 : (storyStage === 2 ? Math.min(arrowOpacity, 1) : 0) }"
       >
         <div class="text-center">
-          <div class="text-gray-400 text-sm mb-4">Scroll to customize</div>
+          <div class="text-gray-400 text-sm mb-4">
+            Scroll to customize
+          </div>
           <div class="animate-bounce">
             <svg class="w-8 h-8 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
