@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
 interface Props {
   industryData: Record<string, number>
@@ -9,6 +9,8 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   labelsOpacity: 1
 })
+
+const hoveredIndustry = ref<string | null>(null)
 
 const processedData = computed(() => {
   return Object.entries(props.industryData)
@@ -55,6 +57,18 @@ function getOpacity(weight: number): number {
   const intensity = weight / maxWeight.value
   return Math.max(0.3 + intensity * 0.7, 0.3)
 }
+
+function handleMouseEnter(industry: string) {
+  hoveredIndustry.value = industry
+}
+
+function handleMouseLeave() {
+  hoveredIndustry.value = null
+}
+
+function isHighlighted(industry: string): boolean {
+  return hoveredIndustry.value === null || hoveredIndustry.value === industry
+}
 </script>
 
 <template>
@@ -65,9 +79,12 @@ function getOpacity(weight: number): number {
         <div
           v-for="item in barChartData"
           :key="item.industry"
+          @mouseenter="handleMouseEnter(item.industry)"
+          @mouseleave="handleMouseLeave"
           :style="{ 
             width: `${item.weight}%`,
-            backgroundColor: item.industry === 'Rest' ? 'transparent' : `rgba(255, 255, 255, ${getOpacity(item.weight)})`
+            backgroundColor: item.industry === 'Rest' ? 'transparent' : `rgba(255, 255, 255, ${getOpacity(item.weight)})`,
+            opacity: isHighlighted(item.industry) ? 1 : 0.3
           }"
           :class="item.industry === 'Rest' ? 'diagonal-stripes' : ''"
           class="relative group transition-all duration-200 hover:brightness-110 cursor-pointer"
@@ -89,7 +106,12 @@ function getOpacity(weight: number): number {
         <div
           v-for="item in legendData"
           :key="item.industry"
-          class="flex items-center gap-1.5"
+          @mouseenter="handleMouseEnter(item.industry)"
+          @mouseleave="handleMouseLeave"
+          :class="[
+            'flex items-center gap-1.5 cursor-pointer transition-all duration-200',
+            isHighlighted(item.industry) ? 'opacity-100' : 'opacity-30'
+          ]"
         >
           <div 
             v-if="item.industry === 'Rest'"
