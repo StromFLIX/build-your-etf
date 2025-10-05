@@ -5,7 +5,7 @@ import { writeFileSync } from 'fs'
 import fetch from 'node-fetch'
 
 // Configuration
-const HEX_RADIUS = 2
+const HEX_RADIUS = 3
 const WIDTH = 800
 const HEIGHT = 550  // Reduced height to remove empty space at bottom
 
