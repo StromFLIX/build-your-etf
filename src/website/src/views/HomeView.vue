@@ -605,8 +605,8 @@ function toggleCategory(category: string) {
             </div>
           </div>
           <div class="flex flex-wrap gap-2">
-            <div 
-              v-for="category in availableCategories" 
+            <div
+              v-for="category in availableCategories"
               :key="category"
               class="relative group category-pill-container"
             >
@@ -622,19 +622,19 @@ function toggleCategory(category: string) {
                 ]"
               >
                 <span>{{ category }}</span>
-                <button
+                <span
                   @click.stop="showCategoryInfo = showCategoryInfo === category ? null : category"
-                  :disabled="loading"
                   :class="[
-                    'w-4 h-4 rounded-full flex items-center justify-center text-xs transition-colors',
+                    'w-4 h-4 rounded-full flex items-center justify-center text-xs transition-colors cursor-pointer',
                     selectedCategories.has(category)
                       ? 'bg-black text-white'
-                      : 'bg-gray-700 text-gray-400 group-hover:bg-gray-600'
+                      : 'bg-gray-700 text-gray-400 group-hover:bg-gray-600',
+                    loading && 'pointer-events-none'
                   ]"
                   title="Info"
                 >
                   i
-                </button>
+                </span>
               </button>
               
               <!-- Info tooltip -->
