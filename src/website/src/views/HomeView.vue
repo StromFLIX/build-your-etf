@@ -427,10 +427,13 @@ function toggleCategory(category: string) {
         </h1>
       </div>
       <!-- Divider -->
-      <div 
-        class="h-px bg-gray-800 transition-opacity duration-300"
-        :style="{ opacity: dividerOpacity }"
-      ></div>
+      <div class="relative h-px bg-gray-800 transition-opacity duration-300" :style="{ opacity: dividerOpacity }">
+        <!-- Loading bar -->
+        <div 
+          v-if="loading"
+          class="absolute top-0 left-0 h-full bg-white loading-bar"
+        ></div>
+      </div>
     </div>
     
     <!-- Hero Section - Simple 3-part layout -->
@@ -862,5 +865,26 @@ function toggleCategory(category: string) {
 .slider::-moz-range-track {
   background: #1f2937;
   border-radius: 4px;
+}
+
+/* Loading bar animation */
+.loading-bar {
+  width: 0%;
+  animation: loadingProgress 2s ease-in-out infinite;
+}
+
+@keyframes loadingProgress {
+  0% {
+    width: 0%;
+    left: 0%;
+  }
+  50% {
+    width: 50%;
+    left: 25%;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
 }
 </style>
