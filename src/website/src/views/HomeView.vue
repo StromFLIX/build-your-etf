@@ -538,7 +538,7 @@ function toggleCategory(category: string) {
           <div class="flex justify-between items-start mb-3">
             <h3 class="text-sm font-medium text-gray-400">ETF Categories</h3>
             <div class="flex items-center gap-2 text-xs">
-              <label class="text-gray-500">Show top</label>
+              <label class="text-gray-500">Max ETFs:</label>
               <select
                 v-model.number="maxETFs"
                 :disabled="loading"
@@ -552,7 +552,6 @@ function toggleCategory(category: string) {
                 <option :value="15">15</option>
                 <option :value="20">20</option>
               </select>
-              <label class="text-gray-500">ETFs</label>
             </div>
           </div>
           <div class="flex flex-wrap gap-2">
