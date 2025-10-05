@@ -54,12 +54,13 @@ class ETFOptimizer:
         # Decision variables: binary variables for ETF selection
         etf_selected = []
         for i, etf in enumerate(available_etfs):
-            etf_selected.append(model.NewBoolVar(f'select_etf_{i}_{etf.ticker}'))
+            etf_selected.append(model.NewBoolVar(f'select_{i}'))
         
         # Weight variables: integer weights (0-100 representing percentages)
+        # Using smaller scale for better performance
         etf_weights = []
         for i, etf in enumerate(available_etfs):
-            etf_weights.append(model.NewIntVar(0, 100, f'weight_etf_{i}_{etf.ticker}'))
+            etf_weights.append(model.NewIntVar(0, 100, f'w_{i}'))
         
         # Constraint: limit number of selected ETFs
         model.Add(sum(etf_selected) <= max_etfs)
@@ -73,112 +74,121 @@ class ETFOptimizer:
             model.Add(etf_weights[i] <= 100 * etf_selected[i])
             model.Add(etf_weights[i] >= 1 * etf_selected[i])  # If selected, at least 1%
         
-        # Pre-calculate allocation matrices for efficiency
+        # Pre-calculate allocation matrices for efficiency (sparse representation)
+        # Only store non-zero allocations to reduce constraint complexity
+        # Scale: Use integer representation (0-100 scale for percentages)
         country_allocations = {}
         for country in target_countries:
-            country_allocations[country] = []
-            for etf in available_etfs:
-                allocation = 0
+            sparse_alloc = []
+            for i, etf in enumerate(available_etfs):
                 for dist in etf.country_distributions:
-                    if dist.country == country:
-                        allocation = int(dist.weight * 100)  # Scale to integer (0-10000)
+                    if dist.country == country and dist.weight > 0.01:  # Filter negligible allocations
+                        allocation = int(round(dist.weight))  # 0-100 scale
+                        if allocation > 0:
+                            sparse_alloc.append((i, allocation))
                         break
-                country_allocations[country].append(allocation)
+            country_allocations[country] = sparse_alloc
         
         industry_allocations = {}
         for industry in target_industries:
-            industry_allocations[industry] = []
-            for etf in available_etfs:
-                allocation = 0
+            sparse_alloc = []
+            for i, etf in enumerate(available_etfs):
                 for dist in etf.industry_distributions:
-                    if dist.industry == industry:
-                        allocation = int(dist.weight * 100)  # Scale to integer (0-10000)
+                    if dist.industry == industry and dist.weight > 0.01:  # Filter negligible allocations
+                        allocation = int(round(dist.weight))  # 0-100 scale
+                        if allocation > 0:
+                            sparse_alloc.append((i, allocation))
                         break
-                industry_allocations[industry].append(allocation)
+            industry_allocations[industry] = sparse_alloc
         
-        # Calculate achieved allocations using linear combinations
+        # Calculate achieved allocations using linear combinations (optimized)
+        # Use LinearExpr.WeightedSum instead of multiplication constraints
         achieved_countries = {}
         for country in target_countries:
-            achieved_countries[country] = model.NewIntVar(0, 1000000, f'achieved_country_{country}')
+            sparse_alloc = country_allocations[country]
             
-            # achieved = sum(weight[i] * allocation[i] for i in range(num_etfs))
-            weighted_contributions = []
-            for i, etf in enumerate(available_etfs):
-                if country_allocations[country][i] > 0:
-                    contribution = model.NewIntVar(0, 1000000, f'contrib_{country}_{i}')
-                    model.AddMultiplicationEquality(contribution, etf_weights[i], country_allocations[country][i])
-                    weighted_contributions.append(contribution)
-            
-            if weighted_contributions:
-                model.Add(achieved_countries[country] == sum(weighted_contributions))
+            if sparse_alloc:
+                # Use weighted sum directly - much faster than multiplication constraints
+                weighted_terms = []
+                coefficients = []
+                for etf_idx, allocation in sparse_alloc:
+                    weighted_terms.append(etf_weights[etf_idx])
+                    coefficients.append(allocation)
+                
+                achieved_var = model.NewIntVar(0, 10000, f'ac_{country[:10]}')
+                model.Add(achieved_var == cp_model.LinearExpr.WeightedSum(weighted_terms, coefficients))
+                achieved_countries[country] = achieved_var
             else:
-                model.Add(achieved_countries[country] == 0)
+                achieved_var = model.NewIntVar(0, 0, f'ac_{country[:10]}_zero')
+                achieved_countries[country] = achieved_var
         
         achieved_industries = {}
         for industry in target_industries:
-            achieved_industries[industry] = model.NewIntVar(0, 1000000, f'achieved_industry_{industry}')
+            sparse_alloc = industry_allocations[industry]
             
-            weighted_contributions = []
-            for i, etf in enumerate(available_etfs):
-                if industry_allocations[industry][i] > 0:
-                    contribution = model.NewIntVar(0, 1000000, f'contrib_{industry}_{i}')
-                    model.AddMultiplicationEquality(contribution, etf_weights[i], industry_allocations[industry][i])
-                    weighted_contributions.append(contribution)
-            
-            if weighted_contributions:
-                model.Add(achieved_industries[industry] == sum(weighted_contributions))
+            if sparse_alloc:
+                weighted_terms = []
+                coefficients = []
+                for etf_idx, allocation in sparse_alloc:
+                    weighted_terms.append(etf_weights[etf_idx])
+                    coefficients.append(allocation)
+                
+                achieved_var = model.NewIntVar(0, 10000, f'ai_{industry[:10]}')
+                model.Add(achieved_var == cp_model.LinearExpr.WeightedSum(weighted_terms, coefficients))
+                achieved_industries[industry] = achieved_var
             else:
-                model.Add(achieved_industries[industry] == 0)
+                achieved_var = model.NewIntVar(0, 0, f'ai_{industry[:10]}_zero')
+                achieved_industries[industry] = achieved_var
         
-        # Objective: minimize allocation errors and TER
+        # Objective: minimize allocation errors and TER (optimized with LinearExpr)
         objective_terms = []
         
-        # Country allocation errors
+        # Country allocation errors (using 100x scale: target*100 vs achieved weight*allocation)
         for country, target in target_countries.items():
-            target_scaled = int(target * 10000)  # Scale target to match (weight * allocation)
+            target_scaled = int(round(target * 100))  # Scale to match weight*allocation scale
             achieved = achieved_countries[country]
             
             # Create absolute difference variables
-            pos_error = model.NewIntVar(0, 1000000, f'country_pos_error_{country}')
-            neg_error = model.NewIntVar(0, 1000000, f'country_neg_error_{country}')
+            pos_error = model.NewIntVar(0, 10000, f'cpe_{country[:5]}')
+            neg_error = model.NewIntVar(0, 10000, f'cne_{country[:5]}')
             
             model.Add(achieved - target_scaled <= pos_error)
             model.Add(target_scaled - achieved <= neg_error)
             
             # Add to objective with high weight
-            objective_terms.append(pos_error)
-            objective_terms.append(neg_error)
+            objective_terms.append(pos_error * 100)
+            objective_terms.append(neg_error * 100)
         
         # Industry allocation errors
         for industry, target in target_industries.items():
-            target_scaled = int(target * 10000)
+            target_scaled = int(round(target * 100))
             achieved = achieved_industries[industry]
             
-            pos_error = model.NewIntVar(0, 1000000, f'industry_pos_error_{industry}')
-            neg_error = model.NewIntVar(0, 1000000, f'industry_neg_error_{industry}')
+            pos_error = model.NewIntVar(0, 10000, f'ipe_{industry[:5]}')
+            neg_error = model.NewIntVar(0, 10000, f'ine_{industry[:5]}')
             
             model.Add(achieved - target_scaled <= pos_error)
             model.Add(target_scaled - achieved <= neg_error)
             
             # Add to objective with high weight for important industries
-            weight_multiplier = 10 if target >= 20.0 else 5  # Higher penalty for major allocations
+            weight_multiplier = 1000 if target >= 20.0 else 500  # Higher penalty for major allocations
             objective_terms.extend([pos_error * weight_multiplier, neg_error * weight_multiplier])
         
-        # TER minimization (convert to integer, multiply by 100 for precision)
-        for i, etf in enumerate(available_etfs):
-            ter_scaled = int(etf.ter * 10)  # Scale TER to integer (smaller scale for lower priority)
-            ter_contribution = model.NewIntVar(0, 1000, f'ter_contrib_{i}')
-            model.AddMultiplicationEquality(ter_contribution, etf_weights[i], ter_scaled)
-            objective_terms.append(ter_contribution)  # Lower priority for TER
+        # TER minimization using weighted sum (no intermediate variables needed)
+        ter_coefficients = [int(round(etf.ter * 10)) for etf in available_etfs]
+        ter_term = cp_model.LinearExpr.WeightedSum(etf_weights, ter_coefficients)
+        objective_terms.append(ter_term)
         
         # Set objective
         if objective_terms:
             model.Minimize(sum(objective_terms))
         
-        # Solve
+        # Solve with optimized parameters
         solver = cp_model.CpSolver()
-        solver.parameters.max_time_in_seconds = 30.0
+        solver.parameters.max_time_in_seconds = 10.0  # Reduced timeout - should solve faster now
         solver.parameters.log_search_progress = False
+        solver.parameters.num_search_workers = 4  # Parallel search
+        solver.parameters.linearization_level = 2  # Better constraint linearization
         
         status = solver.Solve(model)
         
