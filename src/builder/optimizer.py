@@ -177,7 +177,7 @@ class ETFOptimizer:
         
         # Solve
         solver = cp_model.CpSolver()
-        solver.parameters.max_time_in_seconds = 3.0
+        solver.parameters.max_time_in_seconds = 30.0
         solver.parameters.log_search_progress = False
         
         status = solver.Solve(model)
