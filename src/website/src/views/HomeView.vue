@@ -2,7 +2,7 @@
 import HexWorldMap from '@/components/HexWorldMapOptimized.vue'
 import IndustryPieChart from '@/components/IndustryPieChart.vue'
 import ETFAllocationTable from '@/components/ETFAllocationTable.vue'
-import { ref, reactive, computed, onMounted, onUnmounted } from 'vue'
+import { ref, reactive, computed, onMounted, onUnmounted, watch } from 'vue'
 import { optimizePortfolio, getDefaultMSCIWorldData, getDefaultETFAllocation, getAvailableCountries, getAvailableIndustries, getAvailableCategories } from '@/services/etfService'
 
 // Category definitions with descriptions
@@ -96,6 +96,19 @@ const selectedIndustries = ref<string[]>([])
 
 // Max items that can be displayed
 const MAX_DISPLAYED_ITEMS = 5
+
+// Helper function to get color based on achievement accuracy
+function getAchievementColor(target: number, achieved: number): string {
+  if (target === 0) return 'bg-gray-600' // No target set
+  
+  const diff = Math.abs(target - achieved)
+  const percentDiff = (diff / target) * 100
+  
+  if (percentDiff <= 5) return 'bg-green-600' // Within 5%
+  if (percentDiff <= 15) return 'bg-yellow-600' // Within 15%
+  if (percentDiff <= 30) return 'bg-orange-600' // Within 30%
+  return 'bg-red-600' // More than 30% off
+}
 
 // Top countries and industries
 const topCountries = computed(() => {
@@ -239,6 +252,13 @@ onUnmounted(() => {
   window.removeEventListener('click', handleClickOutside)
 })
 
+// Watch maxETFs and update displayed allocations when it changes
+watch(maxETFs, (newMax) => {
+  if (portfolioResult.value && portfolioResult.value.etf_allocations) {
+    etfAllocations.value = portfolioResult.value.etf_allocations.slice(0, newMax)
+  }
+})
+
 async function optimizeAndUpdate() {
   if (loading.value) return
   
@@ -266,7 +286,8 @@ async function optimizeAndUpdate() {
     const result = await optimizePortfolio(
       selectedCountryAllocations, 
       selectedIndustryAllocations,
-      categoryFilters.length > 0 ? categoryFilters : undefined
+      categoryFilters.length > 0 ? categoryFilters : undefined,
+      maxETFs.value
     )
     portfolioResult.value = result
     
@@ -634,25 +655,42 @@ function toggleCategory(category: string) {
               <div 
                 v-for="item in topCountries" 
                 :key="item.name"
-                class="space-y-2"
+                class="space-y-2.5 p-3 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-gray-700 transition-colors"
               >
-                <div class="flex justify-between text-sm items-center">
-                  <span class="font-medium">{{ item.name }}</span>
-                  <div class="flex items-center gap-2">
-                    <span class="text-gray-400">{{ item.allocated.toFixed(1) }}%</span>
-                    <button
-                      @click="removeCountry(item.name)"
-                      :disabled="loading"
-                      class="text-red-500 hover:text-red-400 text-xs disabled:opacity-50 disabled:cursor-not-allowed"
-                      title="Remove country"
+                <div class="flex justify-between items-start">
+                  <span class="font-medium text-sm">{{ item.name }}</span>
+                  <button
+                    @click="removeCountry(item.name)"
+                    :disabled="loading"
+                    class="text-gray-500 hover:text-red-400 text-xs disabled:opacity-50 disabled:cursor-not-allowed transition-colors -mt-1"
+                    title="Remove country"
+                  >
+                    ✕
+                  </button>
+                </div>
+                
+                <!-- Target vs Achieved Pills -->
+                <div class="flex items-center gap-2 text-xs">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-gray-500">Target:</span>
+                    <span class="text-white font-medium">{{ item.allocated.toFixed(1) }}%</span>
+                  </div>
+                  <div class="text-gray-700">→</div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-gray-500">Achieved:</span>
+                    <span 
+                      :class="[
+                        'px-2 py-0.5 rounded-md font-medium text-white',
+                        getAchievementColor(item.allocated, item.current)
+                      ]"
                     >
-                      ✕
-                    </button>
+                      {{ item.current.toFixed(1) }}%
+                    </span>
                   </div>
                 </div>
                 
                 <!-- Slider with current value indicator -->
-                <div class="relative">
+                <div class="relative pt-1">
                   <input
                     type="range"
                     :value="item.allocated"
@@ -665,7 +703,7 @@ function toggleCategory(category: string) {
                   />
                   <!-- Current value indicator (dashed line) -->
                   <div 
-                    class="absolute top-0 bottom-0 w-0.5 border-l-2 border-dashed border-gray-500 pointer-events-none"
+                    class="absolute top-1 bottom-0 w-0.5 border-l-2 border-dashed border-gray-500 pointer-events-none"
                     :style="{ left: `${item.current}%` }"
                   ></div>
                 </div>
@@ -719,25 +757,42 @@ function toggleCategory(category: string) {
               <div 
                 v-for="item in topIndustries" 
                 :key="item.name"
-                class="space-y-2"
+                class="space-y-2.5 p-3 rounded-lg bg-gray-900/50 border border-gray-800 hover:border-gray-700 transition-colors"
               >
-                <div class="flex justify-between text-sm items-center">
-                  <span class="font-medium">{{ item.name }}</span>
-                  <div class="flex items-center gap-2">
-                    <span class="text-gray-400">{{ item.allocated.toFixed(1) }}%</span>
-                    <button
-                      @click="removeIndustry(item.name)"
-                      :disabled="loading"
-                      class="text-red-500 hover:text-red-400 text-xs disabled:opacity-50 disabled:cursor-not-allowed"
-                      title="Remove industry"
+                <div class="flex justify-between items-start">
+                  <span class="font-medium text-sm">{{ item.name }}</span>
+                  <button
+                    @click="removeIndustry(item.name)"
+                    :disabled="loading"
+                    class="text-gray-500 hover:text-red-400 text-xs disabled:opacity-50 disabled:cursor-not-allowed transition-colors -mt-1"
+                    title="Remove industry"
+                  >
+                    ✕
+                  </button>
+                </div>
+                
+                <!-- Target vs Achieved Pills -->
+                <div class="flex items-center gap-2 text-xs">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-gray-500">Target:</span>
+                    <span class="text-white font-medium">{{ item.allocated.toFixed(1) }}%</span>
+                  </div>
+                  <div class="text-gray-700">→</div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-gray-500">Achieved:</span>
+                    <span 
+                      :class="[
+                        'px-2 py-0.5 rounded-md font-medium text-white',
+                        getAchievementColor(item.allocated, item.current)
+                      ]"
                     >
-                      ✕
-                    </button>
+                      {{ item.current.toFixed(1) }}%
+                    </span>
                   </div>
                 </div>
                 
                 <!-- Slider with current value indicator -->
-                <div class="relative">
+                <div class="relative pt-1">
                   <input
                     type="range"
                     :value="item.allocated"
@@ -750,7 +805,7 @@ function toggleCategory(category: string) {
                   />
                   <!-- Current value indicator (dashed line) -->
                   <div 
-                    class="absolute top-0 bottom-0 w-0.5 border-l-2 border-dashed border-gray-500 pointer-events-none"
+                    class="absolute top-1 bottom-0 w-0.5 border-l-2 border-dashed border-gray-500 pointer-events-none"
                     :style="{ left: `${item.current}%` }"
                   ></div>
                 </div>

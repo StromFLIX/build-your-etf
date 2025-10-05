@@ -76,7 +76,8 @@ export interface OptimizationResult {
 export async function optimizePortfolio(
   countries: Record<string, number>, 
   industries: Record<string, number>,
-  categories?: string[]
+  categories?: string[],
+  maxEtfs: number = 3
 ): Promise<OptimizationResult> {
   const response = await fetch(`${API_BASE}/optimize`, {
     method: 'POST',
@@ -87,7 +88,7 @@ export async function optimizePortfolio(
       countries,
       industries,
       config: {
-        max_etfs: 3,
+        max_etfs: maxEtfs,
         max_ter: 1.0,
         min_fund_size: 100,
         excluded_etfs: [],
