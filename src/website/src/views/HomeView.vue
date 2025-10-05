@@ -135,13 +135,13 @@ const topIndustries = computed(() => {
 const canAddMoreCountries = computed(() => selectedCountries.value.length < MAX_DISPLAYED_ITEMS)
 const canAddMoreIndustries = computed(() => selectedIndustries.value.length < MAX_DISPLAYED_ITEMS)
 
-// Top countries for map legend (sorted by percentage, top 3)
+// Top countries for map legend (sorted by percentage, top 8)
 const topCountriesForLegend = computed(() => {
   return Object.entries(currentCountryData.value)
     .map(([name, weight]) => ({ name, weight }))
     .filter(d => d.weight > 0)
     .sort((a, b) => b.weight - a.weight)
-    .slice(0, 3)
+    .slice(0, 8)
 })
 
 // Get opacity for country based on weight
