@@ -216,9 +216,9 @@ onMounted(async () => {
   window.scrollTo(0, 0)
   scrollY.value = 0
   
-  // Start story sequence - slower timing
-  setTimeout(() => { storyStage.value = 1 }, 3500) // Stage 1 → 2 after 3.5s
-  setTimeout(() => { storyStage.value = 2 }, 7000) // Stage 2 → 3 after 7s
+  // Start story sequence - extended timing
+  setTimeout(() => { storyStage.value = 1 }, 4000) // Stage 1 → 2 after 4s
+  setTimeout(() => { storyStage.value = 2 }, 12500) // Stage 2 → 3 after 8.5s
   
   // Load available options
   try {
