@@ -265,7 +265,7 @@ async function optimizeAndUpdate() {
   loading.value = true
   
   // Scroll to map section
-  mapSectionRef.value?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  mapSectionRef.value?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   
   try {
     // Only send allocations for selected/displayed items
