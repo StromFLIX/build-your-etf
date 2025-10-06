@@ -1,7 +1,7 @@
 // Detect environment - use localhost in development, production URL otherwise
 const API_BASE = import.meta.env.DEV 
   ? 'http://localhost:8000' 
-  : 'https://build-your-etf.backend.stromflix.com/'
+  : 'https://build-your-etf.backend.stromflix.com'
 
 // Default MSCI World ETF allocation (100% in a single global ETF)
 export function getDefaultETFAllocation() {
